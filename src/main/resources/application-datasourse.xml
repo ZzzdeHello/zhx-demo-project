@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 导入外部资源文件 FALLBACK　　 默认值，不存在时覆盖  NEVER　　　 不覆盖OVERRIDE　　覆盖-->
+    <context:property-placeholder location="classpath:mybatis/jdbc.properties" system-properties-mode="FALLBACK"/>
+    <!--
+    注解配置扫描
+    -->
+    <!-- 扫描 service -->
+<!--    <context:component-scan base-package="project.myBatis.service_my"/>-->
+    <context:component-scan base-package="project.myBatis.service_pst"/>
+
+
+    <!--测试环境数据源、德鲁伊连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${mysql.url}"/>
+        <property name="username" value="${mysql.username}"/>
+        <property name="password" value="${mysql.password}"/>
+        <property name="filters" value="${mysql.filters}"/>
+        <property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${mysql.publickey}"/>
+        <property name="maxActive" value="${mysql.maxActive}"/>
+        <property name="initialSize" value="${mysql.initialSize}"/>
+        <property name="maxWait" value="${mysql.maxWait}"/>
+        <property name="minIdle" value="${mysql.minIdle}"/>
+        <property name="timeBetweenEvictionRunsMillis" value="${mysql.timeBetweenEvictionRunsMillis}"/>
+        <property name="minEvictableIdleTimeMillis" value="${mysql.minEvictableIdleTimeMillis}"/>
+        <property name="validationQuery" value="${mysql.validationQuery}"/>
+        <property name="testWhileIdle" value="${mysql.testWhileIdle}"/>
+        <property name="testOnBorrow" value="${mysql.testOnBorrow}"/>
+        <property name="testOnReturn" value="${mysql.testOnReturn}"/>
+        <property name="poolPreparedStatements" value="${mysql.poolPreparedStatements}"/>
+        <property name="keepAlive" value="${mysql.keepAlive}"/>
+    </bean>
+
+    <!--测试环境数据源、德鲁伊连接池-->
+    <bean id="dataSource_pst2" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${mysql2.url}"/>
+        <property name="username" value="${mysql2.username}"/>
+        <property name="password" value="${mysql2.password}"/>
+        <property name="filters" value="${mysql2.filters}"/>
+        <property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${mysql2.publickey}"/>
+        <property name="maxActive" value="${mysql2.maxActive}"/>
+        <property name="initialSize" value="${mysql2.initialSize}"/>
+        <property name="maxWait" value="${mysql2.maxWait}"/>
+        <property name="minIdle" value="${mysql2.minIdle}"/>
+        <property name="timeBetweenEvictionRunsMillis" value="${mysql2.timeBetweenEvictionRunsMillis}"/>
+        <property name="minEvictableIdleTimeMillis" value="${mysql2.minEvictableIdleTimeMillis}"/>
+        <property name="validationQuery" value="${mysql2.validationQuery}"/>
+        <property name="testWhileIdle" value="${mysql2.testWhileIdle}"/>
+        <property name="testOnBorrow" value="${mysql2.testOnBorrow}"/>
+        <property name="testOnReturn" value="${mysql2.testOnReturn}"/>
+        <property name="poolPreparedStatements" value="${mysql2.poolPreparedStatements}"/>
+        <property name="keepAlive" value="${mysql2.keepAlive}"/>
+    </bean>
+    <!-- 注册事务管理器 -->
+    <bean id="txMgr" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    <bean id="txMgr_pst2" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource_pst2"></property>
+    </bean>
+    <!-- 开启事务注解驱动 -->
+    <tx:annotation-driven transaction-manager="txMgr" />
+    <tx:annotation-driven transaction-manager="txMgr_pst2" />
+
+
+    <!-- 配置可以整体扫描Mapper的一个扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="project.myBatis.dao.pst2_dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory_pst2"></property>
+    </bean>
+    <!--pst-->
+    <!-- 配置mybatis的sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+        <property name="mapperLocations" value="classpath:mybatis/mapper/pstMapper/*Mapper.xml"/>
+        <property name="plugins">
+            <array>
+                <!-- 传入插件的对象 -->
+                <bean class="com.github.pagehelper.PageInterceptor">
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="sqlSessionFactory_pst2" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+        <property name="mapperLocations" value="classpath:mybatis/mapper/pstMapper/*Mapper.xml"/>
+        <property name="plugins">
+            <array>
+                <!-- 传入插件的对象 -->
+                <bean class="com.github.pagehelper.PageInterceptor">
+                </bean>
+            </array>
+        </property>
+    </bean>
+    <!-- 配置可以整体扫描Mapper的一个扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="project.myBatis.dao.pst_dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>
+
+    <!-- 配置可以整体扫描Mapper的一个扫描器 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="project.myBatis.dao.pst2_dao"></property>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory_pst2"></property>
+    </bean>
+
+<!--    &lt;!&ndash;7 aspectj支持自动代理实现AOP功能 &ndash;&gt;-->
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>-->
+
+</beans>

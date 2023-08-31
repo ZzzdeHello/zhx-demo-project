@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="project.myBatis.dao.pst_dao.ChOperationMonthDao">
+    <select id="selectOneItem" resultType="java.util.Map">
+        select c.OPERATORS_NBR,c.month from ch_operators_info_month as c where id = 7
+    </select>
+
+    <resultMap id="RM_ChOperatorsInfoMonthDo" type="project.myBatis.model.ChOperatorsInfoMonthDo">
+            <id column="ID" property="id"/>
+            <result column="MONTH" property="month"/>
+            <result column="OPERATORS_NBR" property="operatorsNbr"/>
+            <result column="AGENT_CODE" property="agentCode"/>
+            <result column="OPERATORS_NAME" property="operatorsName"/>
+            <result column="OPERATORS_SNAME" property="operatorsSname"/>
+            <result column="UP_AGENT_CODE" property="upAgentCode"/>
+            <result column="UP_AGENT_NAME" property="upAgentName"/>
+            <result column="TOP_AGENT_CODE" property="topAgentCode"/>
+            <result column="TOP_AGENT_NAME" property="topAgentName"/>
+            <result column="AREA_ID" property="areaId"/>
+            <result column="AREA_TREE" property="areaTree"/>
+            <result column="ORG_NAME_SHIF" property="orgNameShif"/>
+            <result column="ORG_NAME_XIANF" property="orgNameXianf"/>
+            <result column="ORG_NAME_ZHIJU" property="orgNameZhiju"/>
+            <result column="PARTY_ID" property="partyId"/>
+            <result column="OPERATORS_LEVEL" property="operatorsLevel"/>
+            <result column="LEGAL_REPR" property="legalRepr"/>
+            <result column="REGION_ID" property="regionId"/>
+            <result column="OPERATORS_TYPE_CD" property="operatorsTypeCd"/>
+            <result column="IF_DEFAULT_HALL" property="ifDefaultHall"/>
+            <result column="IF_FOR_PRICE" property="ifForPrice"/>
+            <result column="TERMINAL_SUPPLIER_ID" property="terminalSupplierId"/>
+            <result column="SAP_ID" property="sapId"/>
+            <result column="TAXPAYER_TYPE" property="taxpayerType"/>
+            <result column="ONE_KEY_SETTLEMENT" property="oneKeySettlement"/>
+            <result column="AIR_AGENT_TYPE" property="airAgentType"/>
+            <result column="AGENT_CONTRACT_NUM" property="agentContractNum"/>
+            <result column="REQUEST_DATE" property="requestDate"/>
+            <result column="REGULATORY_MANAGE" property="regulatoryManage"/>
+            <result column="INTENSIVE_RUNMANAGE" property="intensiveRunmanage"/>
+            <result column="PERF_DEPOSIT" property="perfDeposit"/>
+            <result column="TEL_FARE_DEPOSIT_ACC" property="telFareDepositAcc"/>
+            <result column="CHAIN_TYPE" property="chainType"/>
+            <result column="NATIONAL_CHAIN_GENERAL_NAME" property="nationalChainGeneralName"/>
+            <result column="PROVINCIAL_CHAIN_GENERAL_NAME" property="provincialChainGeneralName"/>
+            <result column="OPERATORS_LEVEL_JT" property="operatorsLevelJt"/>
+            <result column="OPERATORS_LEVEL_ZJ" property="operatorsLevelZj"/>
+            <result column="NATIONAL_EC_GENERAL_NAME" property="nationalEcGeneralName"/>
+            <result column="NATIONAL_GE_NAME" property="nationalGeName"/>
+            <result column="BANK_ACCOUNT" property="bankAccount"/>
+            <result column="BANK" property="bank"/>
+            <result column="ACCOUNT_NAME" property="accountName"/>
+            <result column="BANK_NUMBER" property="bankNumber"/>
+            <result column="LEGAL_PERSON_CODE_TYPE" property="legalPersonCodeType"/>
+            <result column="LEGAL_PERSON_CODE" property="legalPersonCode"/>
+            <result column="SUBJECT_BUSINESS_SCOPE" property="subjectBusinessScope"/>
+            <result column="AGENT_QUALIFICATION_AUDIT" property="agentQualificationAudit"/>
+            <result column="AGENT_CONTRACT_CODE" property="agentContractCode"/>
+            <result column="DEALER_MARK" property="dealerMark"/>
+            <result column="DIRECTLY_AFFILIATED_GROUP" property="directlyAffiliatedGroup"/>
+            <result column="TERMINAL_AGENT_ID" property="terminalAgentId"/>
+            <result column="OPERATORS_CERT_TYPE" property="operatorsCertType"/>
+            <result column="OPERATORS_CERT_CODE" property="operatorsCertCode"/>
+            <result column="CONTACT_ADDR" property="contactAddr"/>
+            <result column="CONTACT_PHONE" property="contactPhone"/>
+            <result column="CONTACT_PERSON" property="contactPerson"/>
+            <result column="CONTACT_MAIL" property="contactMail"/>
+            <result column="CITY_BRANCH" property="cityBranch"/>
+            <result column="COUNTY_BRANCH" property="countyBranch"/>
+            <result column="SUPPLIER_BANK_ACCOUNT" property="supplierBankAccount"/>
+            <result column="SAP_BANK_ACCOUNT" property="sapBankAccount"/>
+            <result column="TEL_FARE_DEPOSIT_ACC_ID" property="telFareDepositAccId"/>
+            <result column="CONTRACT_LOCK" property="contractLock"/>
+            <result column="BLACK_LIST_MARK" property="blackListMark"/>
+            <result column="JOINT_OPER" property="jointOper"/>
+            <result column="SUPPLIER_PROV" property="supplierProv"/>
+            <result column="SUPPLIER_CITY" property="supplierCity"/>
+            <result column="SUPPLIER_COUNTY" property="supplierCounty"/>
+            <result column="ELEC_GRADE_COEFF" property="elecGradeCoeff"/>
+            <result column="IS_ELEC_AGENT" property="isElecAgent"/>
+            <result column="TEL_BILL_BANK_ACC_A" property="telBillBankAccA"/>
+            <result column="TEL_BILL_BANK_ACC_B" property="telBillBankAccB"/>
+            <result column="TEL_BILL_BANK_ACC_C" property="telBillBankAccC"/>
+            <result column="CREATE_DATE" property="createDate"/>
+            <result column="CREATE_STAFF" property="createStaff"/>
+            <result column="STATUS_CD" property="statusCd"/>
+            <result column="STATUS_DATE" property="statusDate"/>
+            <result column="UPDATE_DATE" property="updateDate"/>
+            <result column="UPDATE_STAFF" property="updateStaff"/>
+        </resultMap>
+
+        <sql id="columnsSql">
+            ID,
+            MONTH,
+            OPERATORS_NBR,
+            AGENT_CODE,
+            OPERATORS_NAME,
+            OPERATORS_SNAME,
+            UP_AGENT_CODE,
+            UP_AGENT_NAME,
+            TOP_AGENT_CODE,
+            TOP_AGENT_NAME,
+            AREA_ID,
+            AREA_TREE,
+            ORG_NAME_SHIF,
+            ORG_NAME_XIANF,
+            ORG_NAME_ZHIJU,
+            PARTY_ID,
+            OPERATORS_LEVEL,
+            LEGAL_REPR,
+            REGION_ID,
+            OPERATORS_TYPE_CD,
+            IF_DEFAULT_HALL,
+            IF_FOR_PRICE,
+            TERMINAL_SUPPLIER_ID,
+            SAP_ID,
+            TAXPAYER_TYPE,
+            ONE_KEY_SETTLEMENT,
+            AIR_AGENT_TYPE,
+            AGENT_CONTRACT_NUM,
+            REQUEST_DATE,
+            REGULATORY_MANAGE,
+            INTENSIVE_RUNMANAGE,
+            PERF_DEPOSIT,
+            TEL_FARE_DEPOSIT_ACC,
+            CHAIN_TYPE,
+            NATIONAL_CHAIN_GENERAL_NAME,
+            PROVINCIAL_CHAIN_GENERAL_NAME,
+            OPERATORS_LEVEL_JT,
+            OPERATORS_LEVEL_ZJ,
+            NATIONAL_EC_GENERAL_NAME,
+            NATIONAL_GE_NAME,
+            BANK_ACCOUNT,
+            BANK,
+            ACCOUNT_NAME,
+            BANK_NUMBER,
+            LEGAL_PERSON_CODE_TYPE,
+            LEGAL_PERSON_CODE,
+            SUBJECT_BUSINESS_SCOPE,
+            AGENT_QUALIFICATION_AUDIT,
+            AGENT_CONTRACT_CODE,
+            DEALER_MARK,
+            DIRECTLY_AFFILIATED_GROUP,
+            TERMINAL_AGENT_ID,
+            OPERATORS_CERT_TYPE,
+            OPERATORS_CERT_CODE,
+            CONTACT_ADDR,
+            CONTACT_PHONE,
+            CONTACT_PERSON,
+            CONTACT_MAIL,
+            CITY_BRANCH,
+            COUNTY_BRANCH,
+            SUPPLIER_BANK_ACCOUNT,
+            SAP_BANK_ACCOUNT,
+            TEL_FARE_DEPOSIT_ACC_ID,
+            CONTRACT_LOCK,
+            BLACK_LIST_MARK,
+            JOINT_OPER,
+            SUPPLIER_PROV,
+            SUPPLIER_CITY,
+            SUPPLIER_COUNTY,
+            ELEC_GRADE_COEFF,
+            IS_ELEC_AGENT,
+            TEL_BILL_BANK_ACC_A,
+            TEL_BILL_BANK_ACC_B,
+            TEL_BILL_BANK_ACC_C,
+            CREATE_DATE,
+            CREATE_STAFF,
+            STATUS_CD,
+            STATUS_DATE,
+            UPDATE_DATE,
+            UPDATE_STAFF
+        </sql>
+
+        <sql id="whereSql">
+            <where>
+                <if test="vo !=null">
+                    <if test="vo.month!=null">
+                        and MONTH = #{vo.month}
+                    </if>
+                    <if test="vo.operatorsNbr!=null">
+                        and OPERATORS_NBR = #{vo.operatorsNbr}
+                    </if>
+                    <if test="vo.agentCode!=null">
+                        and AGENT_CODE = #{vo.agentCode}
+                    </if>
+                    <if test="vo.operatorsName!=null">
+                        and OPERATORS_NAME = #{vo.operatorsName}
+                    </if>
+                    <if test="vo.operatorsSname!=null">
+                        and OPERATORS_SNAME = #{vo.operatorsSname}
+                    </if>
+                    <if test="vo.upAgentCode!=null">
+                        and UP_AGENT_CODE = #{vo.upAgentCode}
+                    </if>
+                    <if test="vo.upAgentName!=null">
+                        and UP_AGENT_NAME = #{vo.upAgentName}
+                    </if>
+                    <if test="vo.topAgentCode!=null">
+                        and TOP_AGENT_CODE = #{vo.topAgentCode}
+                    </if>
+                    <if test="vo.topAgentName!=null">
+                        and TOP_AGENT_NAME = #{vo.topAgentName}
+                    </if>
+                    <if test="vo.areaId!=null">
+                        and AREA_ID = #{vo.areaId}
+                    </if>
+                    <if test="vo.areaTree!=null">
+                        and AREA_TREE = #{vo.areaTree}
+                    </if>
+                    <if test="vo.orgNameShif!=null">
+                        and ORG_NAME_SHIF = #{vo.orgNameShif}
+                    </if>
+                    <if test="vo.orgNameXianf!=null">
+                        and ORG_NAME_XIANF = #{vo.orgNameXianf}
+                    </if>
+                    <if test="vo.orgNameZhiju!=null">
+                        and ORG_NAME_ZHIJU = #{vo.orgNameZhiju}
+                    </if>
+                    <if test="vo.partyId!=null">
+                        and PARTY_ID = #{vo.partyId}
+                    </if>
+                    <if test="vo.operatorsLevel!=null">
+                        and OPERATORS_LEVEL = #{vo.operatorsLevel}
+                    </if>
+                    <if test="vo.legalRepr!=null">
+                        and LEGAL_REPR = #{vo.legalRepr}
+                    </if>
+                    <if test="vo.regionId!=null">
+                        and REGION_ID = #{vo.regionId}
+                    </if>
+                    <if test="vo.operatorsTypeCd!=null">
+                        and OPERATORS_TYPE_CD = #{vo.operatorsTypeCd}
+                    </if>
+                    <if test="vo.ifDefaultHall!=null">
+                        and IF_DEFAULT_HALL = #{vo.ifDefaultHall}
+                    </if>
+                    <if test="vo.ifForPrice!=null">
+                        and IF_FOR_PRICE = #{vo.ifForPrice}
+                    </if>
+                    <if test="vo.terminalSupplierId!=null">
+                        and TERMINAL_SUPPLIER_ID = #{vo.terminalSupplierId}
+                    </if>
+                    <if test="vo.sapId!=null">
+                        and SAP_ID = #{vo.sapId}
+                    </if>
+                    <if test="vo.taxpayerType!=null">
+                        and TAXPAYER_TYPE = #{vo.taxpayerType}
+                    </if>
+                    <if test="vo.oneKeySettlement!=null">
+                        and ONE_KEY_SETTLEMENT = #{vo.oneKeySettlement}
+                    </if>
+                    <if test="vo.airAgentType!=null">
+                        and AIR_AGENT_TYPE = #{vo.airAgentType}
+                    </if>
+                    <if test="vo.agentContractNum!=null">
+                        and AGENT_CONTRACT_NUM = #{vo.agentContractNum}
+                    </if>
+                    <if test="vo.requestDate!=null">
+                        and REQUEST_DATE = #{vo.requestDate}
+                    </if>
+                    <if test="vo.regulatoryManage!=null">
+                        and REGULATORY_MANAGE = #{vo.regulatoryManage}
+                    </if>
+                    <if test="vo.intensiveRunmanage!=null">
+                        and INTENSIVE_RUNMANAGE = #{vo.intensiveRunmanage}
+                    </if>
+                    <if test="vo.perfDeposit!=null">
+                        and PERF_DEPOSIT = #{vo.perfDeposit}
+                    </if>
+                    <if test="vo.telFareDepositAcc!=null">
+                        and TEL_FARE_DEPOSIT_ACC = #{vo.telFareDepositAcc}
+                    </if>
+                    <if test="vo.chainType!=null">
+                        and CHAIN_TYPE = #{vo.chainType}
+                    </if>
+                    <if test="vo.nationalChainGeneralName!=null">
+                        and NATIONAL_CHAIN_GENERAL_NAME = #{vo.nationalChainGeneralName}
+                    </if>
+                    <if test="vo.provincialChainGeneralName!=null">
+                        and PROVINCIAL_CHAIN_GENERAL_NAME = #{vo.provincialChainGeneralName}
+                    </if>
+                    <if test="vo.operatorsLevelJt!=null">
+                        and OPERATORS_LEVEL_JT = #{vo.operatorsLevelJt}
+                    </if>
+                    <if test="vo.operatorsLevelZj!=null">
+                        and OPERATORS_LEVEL_ZJ = #{vo.operatorsLevelZj}
+                    </if>
+                    <if test="vo.nationalEcGeneralName!=null">
+                        and NATIONAL_EC_GENERAL_NAME = #{vo.nationalEcGeneralName}
+                    </if>
+                    <if test="vo.nationalGeName!=null">
+                        and NATIONAL_GE_NAME = #{vo.nationalGeName}
+                    </if>
+                    <if test="vo.bankAccount!=null">
+                        and BANK_ACCOUNT = #{vo.bankAccount}
+                    </if>
+                    <if test="vo.bank!=null">
+                        and BANK = #{vo.bank}
+                    </if>
+                    <if test="vo.accountName!=null">
+                        and ACCOUNT_NAME = #{vo.accountName}
+                    </if>
+                    <if test="vo.bankNumber!=null">
+                        and BANK_NUMBER = #{vo.bankNumber}
+                    </if>
+                    <if test="vo.legalPersonCodeType!=null">
+                        and LEGAL_PERSON_CODE_TYPE = #{vo.legalPersonCodeType}
+                    </if>
+                    <if test="vo.legalPersonCode!=null">
+                        and LEGAL_PERSON_CODE = #{vo.legalPersonCode}
+                    </if>
+                    <if test="vo.subjectBusinessScope!=null">
+                        and SUBJECT_BUSINESS_SCOPE = #{vo.subjectBusinessScope}
+                    </if>
+                    <if test="vo.agentQualificationAudit!=null">
+                        and AGENT_QUALIFICATION_AUDIT = #{vo.agentQualificationAudit}
+                    </if>
+                    <if test="vo.agentContractCode!=null">
+                        and AGENT_CONTRACT_CODE = #{vo.agentContractCode}
+                    </if>
+                    <if test="vo.dealerMark!=null">
+                        and DEALER_MARK = #{vo.dealerMark}
+                    </if>
+                    <if test="vo.directlyAffiliatedGroup!=null">
+                        and DIRECTLY_AFFILIATED_GROUP = #{vo.directlyAffiliatedGroup}
+                    </if>
+                    <if test="vo.terminalAgentId!=null">
+                        and TERMINAL_AGENT_ID = #{vo.terminalAgentId}
+                    </if>
+                    <if test="vo.operatorsCertType!=null">
+                        and OPERATORS_CERT_TYPE = #{vo.operatorsCertType}
+                    </if>
+                    <if test="vo.operatorsCertCode!=null">
+                        and OPERATORS_CERT_CODE = #{vo.operatorsCertCode}
+                    </if>
+                    <if test="vo.contactAddr!=null">
+                        and CONTACT_ADDR = #{vo.contactAddr}
+                    </if>
+                    <if test="vo.contactPhone!=null">
+                        and CONTACT_PHONE = #{vo.contactPhone}
+                    </if>
+                    <if test="vo.contactPerson!=null">
+                        and CONTACT_PERSON = #{vo.contactPerson}
+                    </if>
+                    <if test="vo.contactMail!=null">
+                        and CONTACT_MAIL = #{vo.contactMail}
+                    </if>
+                    <if test="vo.cityBranch!=null">
+                        and CITY_BRANCH = #{vo.cityBranch}
+                    </if>
+                    <if test="vo.countyBranch!=null">
+                        and COUNTY_BRANCH = #{vo.countyBranch}
+                    </if>
+                    <if test="vo.supplierBankAccount!=null">
+                        and SUPPLIER_BANK_ACCOUNT = #{vo.supplierBankAccount}
+                    </if>
+                    <if test="vo.sapBankAccount!=null">
+                        and SAP_BANK_ACCOUNT = #{vo.sapBankAccount}
+                    </if>
+                    <if test="vo.telFareDepositAccId!=null">
+                        and TEL_FARE_DEPOSIT_ACC_ID = #{vo.telFareDepositAccId}
+                    </if>
+                    <if test="vo.contractLock!=null">
+                        and CONTRACT_LOCK = #{vo.contractLock}
+                    </if>
+                    <if test="vo.blackListMark!=null">
+                        and BLACK_LIST_MARK = #{vo.blackListMark}
+                    </if>
+                    <if test="vo.jointOper!=null">
+                        and JOINT_OPER = #{vo.jointOper}
+                    </if>
+                    <if test="vo.supplierProv!=null">
+                        and SUPPLIER_PROV = #{vo.supplierProv}
+                    </if>
+                    <if test="vo.supplierCity!=null">
+                        and SUPPLIER_CITY = #{vo.supplierCity}
+                    </if>
+                    <if test="vo.supplierCounty!=null">
+                        and SUPPLIER_COUNTY = #{vo.supplierCounty}
+                    </if>
+                    <if test="vo.elecGradeCoeff!=null">
+                        and ELEC_GRADE_COEFF = #{vo.elecGradeCoeff}
+                    </if>
+                    <if test="vo.isElecAgent!=null">
+                        and IS_ELEC_AGENT = #{vo.isElecAgent}
+                    </if>
+                    <if test="vo.telBillBankAccA!=null">
+                        and TEL_BILL_BANK_ACC_A = #{vo.telBillBankAccA}
+                    </if>
+                    <if test="vo.telBillBankAccB!=null">
+                        and TEL_BILL_BANK_ACC_B = #{vo.telBillBankAccB}
+                    </if>
+                    <if test="vo.telBillBankAccC!=null">
+                        and TEL_BILL_BANK_ACC_C = #{vo.telBillBankAccC}
+                    </if>
+                    <if test="vo.createDate!=null">
+                        and CREATE_DATE = #{vo.createDate}
+                    </if>
+                    <if test="vo.createStaff!=null">
+                        and CREATE_STAFF = #{vo.createStaff}
+                    </if>
+                    <if test="vo.statusCd!=null">
+                        and STATUS_CD = #{vo.statusCd}
+                    </if>
+                    <if test="vo.statusDate!=null">
+                        and STATUS_DATE = #{vo.statusDate}
+                    </if>
+                    <if test="vo.updateDate!=null">
+                        and UPDATE_DATE = #{vo.updateDate}
+                    </if>
+                    <if test="vo.updateStaff!=null">
+                        and UPDATE_STAFF = #{vo.updateStaff}
+                    </if>
+                </if>
+            </where>
+        </sql>
+
+        <select id="getPageList" resultMap="RM_ChOperatorsInfoMonthDo">
+            select
+            <include refid="columnsSql"/>
+            from CH_OPERATORS_INFO_MONTH
+            <include refid="whereSql"/>
+            limit #{start},#{limit}
+        </select>
+
+        <select id="count" resultType="java.lang.Integer">
+            select count(*) from CH_OPERATORS_INFO_MONTH
+            <include refid="whereSql"/>
+        </select>
+
+        <select id="query" resultMap="RM_ChOperatorsInfoMonthDo">
+            select
+            <include refid="columnsSql"/>
+            from CH_OPERATORS_INFO_MONTH
+            <include refid="whereSql"/>
+        </select>
+
+        <select id="load" resultMap="RM_ChOperatorsInfoMonthDo">
+            select
+            <include refid="columnsSql"/>
+            from CH_OPERATORS_INFO_MONTH
+            where ID=#{rowId}
+        </select>
+
+        <update id="update">
+            update CH_OPERATORS_INFO_MONTH
+            <set>
+                <if test="vo.month != null">MONTH=#{vo.month},</if>
+                <if test="vo.operatorsNbr != null">OPERATORS_NBR=#{vo.operatorsNbr},</if>
+                <if test="vo.agentCode != null">AGENT_CODE=#{vo.agentCode},</if>
+                <if test="vo.operatorsName != null">OPERATORS_NAME=#{vo.operatorsName},</if>
+                <if test="vo.operatorsSname != null">OPERATORS_SNAME=#{vo.operatorsSname},</if>
+                <if test="vo.upAgentCode != null">UP_AGENT_CODE=#{vo.upAgentCode},</if>
+                <if test="vo.upAgentName != null">UP_AGENT_NAME=#{vo.upAgentName},</if>
+                <if test="vo.topAgentCode != null">TOP_AGENT_CODE=#{vo.topAgentCode},</if>
+                <if test="vo.topAgentName != null">TOP_AGENT_NAME=#{vo.topAgentName},</if>
+                <if test="vo.areaId != null">AREA_ID=#{vo.areaId},</if>
+                <if test="vo.areaTree != null">AREA_TREE=#{vo.areaTree},</if>
+                <if test="vo.orgNameShif != null">ORG_NAME_SHIF=#{vo.orgNameShif},</if>
+                <if test="vo.orgNameXianf != null">ORG_NAME_XIANF=#{vo.orgNameXianf},</if>
+                <if test="vo.orgNameZhiju != null">ORG_NAME_ZHIJU=#{vo.orgNameZhiju},</if>
+                <if test="vo.partyId != null">PARTY_ID=#{vo.partyId},</if>
+                <if test="vo.operatorsLevel != null">OPERATORS_LEVEL=#{vo.operatorsLevel},</if>
+                <if test="vo.legalRepr != null">LEGAL_REPR=#{vo.legalRepr},</if>
+                <if test="vo.regionId != null">REGION_ID=#{vo.regionId},</if>
+                <if test="vo.operatorsTypeCd != null">OPERATORS_TYPE_CD=#{vo.operatorsTypeCd},</if>
+                <if test="vo.ifDefaultHall != null">IF_DEFAULT_HALL=#{vo.ifDefaultHall},</if>
+                <if test="vo.ifForPrice != null">IF_FOR_PRICE=#{vo.ifForPrice},</if>
+                <if test="vo.terminalSupplierId != null">TERMINAL_SUPPLIER_ID=#{vo.terminalSupplierId},</if>
+                <if test="vo.sapId != null">SAP_ID=#{vo.sapId},</if>
+                <if test="vo.taxpayerType != null">TAXPAYER_TYPE=#{vo.taxpayerType},</if>
+                <if test="vo.oneKeySettlement != null">ONE_KEY_SETTLEMENT=#{vo.oneKeySettlement},</if>
+                <if test="vo.airAgentType != null">AIR_AGENT_TYPE=#{vo.airAgentType},</if>
+                <if test="vo.agentContractNum != null">AGENT_CONTRACT_NUM=#{vo.agentContractNum},</if>
+                <if test="vo.requestDate != null">REQUEST_DATE=#{vo.requestDate},</if>
+                <if test="vo.regulatoryManage != null">REGULATORY_MANAGE=#{vo.regulatoryManage},</if>
+                <if test="vo.intensiveRunmanage != null">INTENSIVE_RUNMANAGE=#{vo.intensiveRunmanage},</if>
+                <if test="vo.perfDeposit != null">PERF_DEPOSIT=#{vo.perfDeposit},</if>
+                <if test="vo.telFareDepositAcc != null">TEL_FARE_DEPOSIT_ACC=#{vo.telFareDepositAcc},</if>
+                <if test="vo.chainType != null">CHAIN_TYPE=#{vo.chainType},</if>
+                <if test="vo.nationalChainGeneralName != null">NATIONAL_CHAIN_GENERAL_NAME=#{vo.nationalChainGeneralName},</if>
+                <if test="vo.provincialChainGeneralName != null">PROVINCIAL_CHAIN_GENERAL_NAME=#{vo.provincialChainGeneralName},</if>
+                <if test="vo.operatorsLevelJt != null">OPERATORS_LEVEL_JT=#{vo.operatorsLevelJt},</if>
+                <if test="vo.operatorsLevelZj != null">OPERATORS_LEVEL_ZJ=#{vo.operatorsLevelZj},</if>
+                <if test="vo.nationalEcGeneralName != null">NATIONAL_EC_GENERAL_NAME=#{vo.nationalEcGeneralName},</if>
+                <if test="vo.nationalGeName != null">NATIONAL_GE_NAME=#{vo.nationalGeName},</if>
+                <if test="vo.bankAccount != null">BANK_ACCOUNT=#{vo.bankAccount},</if>
+                <if test="vo.bank != null">BANK=#{vo.bank},</if>
+                <if test="vo.accountName != null">ACCOUNT_NAME=#{vo.accountName},</if>
+                <if test="vo.bankNumber != null">BANK_NUMBER=#{vo.bankNumber},</if>
+                <if test="vo.legalPersonCodeType != null">LEGAL_PERSON_CODE_TYPE=#{vo.legalPersonCodeType},</if>
+                <if test="vo.legalPersonCode != null">LEGAL_PERSON_CODE=#{vo.legalPersonCode},</if>
+                <if test="vo.subjectBusinessScope != null">SUBJECT_BUSINESS_SCOPE=#{vo.subjectBusinessScope},</if>
+                <if test="vo.agentQualificationAudit != null">AGENT_QUALIFICATION_AUDIT=#{vo.agentQualificationAudit},</if>
+                <if test="vo.agentContractCode != null">AGENT_CONTRACT_CODE=#{vo.agentContractCode},</if>
+                <if test="vo.dealerMark != null">DEALER_MARK=#{vo.dealerMark},</if>
+                <if test="vo.directlyAffiliatedGroup != null">DIRECTLY_AFFILIATED_GROUP=#{vo.directlyAffiliatedGroup},</if>
+                <if test="vo.terminalAgentId != null">TERMINAL_AGENT_ID=#{vo.terminalAgentId},</if>
+                <if test="vo.operatorsCertType != null">OPERATORS_CERT_TYPE=#{vo.operatorsCertType},</if>
+                <if test="vo.operatorsCertCode != null">OPERATORS_CERT_CODE=#{vo.operatorsCertCode},</if>
+                <if test="vo.contactAddr != null">CONTACT_ADDR=#{vo.contactAddr},</if>
+                <if test="vo.contactPhone != null">CONTACT_PHONE=#{vo.contactPhone},</if>
+                <if test="vo.contactPerson != null">CONTACT_PERSON=#{vo.contactPerson},</if>
+                <if test="vo.contactMail != null">CONTACT_MAIL=#{vo.contactMail},</if>
+                <if test="vo.cityBranch != null">CITY_BRANCH=#{vo.cityBranch},</if>
+                <if test="vo.countyBranch != null">COUNTY_BRANCH=#{vo.countyBranch},</if>
+                <if test="vo.supplierBankAccount != null">SUPPLIER_BANK_ACCOUNT=#{vo.supplierBankAccount},</if>
+                <if test="vo.sapBankAccount != null">SAP_BANK_ACCOUNT=#{vo.sapBankAccount},</if>
+                <if test="vo.telFareDepositAccId != null">TEL_FARE_DEPOSIT_ACC_ID=#{vo.telFareDepositAccId},</if>
+                <if test="vo.contractLock != null">CONTRACT_LOCK=#{vo.contractLock},</if>
+                <if test="vo.blackListMark != null">BLACK_LIST_MARK=#{vo.blackListMark},</if>
+                <if test="vo.jointOper != null">JOINT_OPER=#{vo.jointOper},</if>
+                <if test="vo.supplierProv != null">SUPPLIER_PROV=#{vo.supplierProv},</if>
+                <if test="vo.supplierCity != null">SUPPLIER_CITY=#{vo.supplierCity},</if>
+                <if test="vo.supplierCounty != null">SUPPLIER_COUNTY=#{vo.supplierCounty},</if>
+                <if test="vo.elecGradeCoeff != null">ELEC_GRADE_COEFF=#{vo.elecGradeCoeff},</if>
+                <if test="vo.isElecAgent != null">IS_ELEC_AGENT=#{vo.isElecAgent},</if>
+                <if test="vo.telBillBankAccA != null">TEL_BILL_BANK_ACC_A=#{vo.telBillBankAccA},</if>
+                <if test="vo.telBillBankAccB != null">TEL_BILL_BANK_ACC_B=#{vo.telBillBankAccB},</if>
+                <if test="vo.telBillBankAccC != null">TEL_BILL_BANK_ACC_C=#{vo.telBillBankAccC},</if>
+                <if test="vo.createDate != null">CREATE_DATE=#{vo.createDate},</if>
+                <if test="vo.createStaff != null">CREATE_STAFF=#{vo.createStaff},</if>
+                <if test="vo.statusCd != null">STATUS_CD=#{vo.statusCd},</if>
+                <if test="vo.statusDate != null">STATUS_DATE=#{vo.statusDate},</if>
+                <if test="vo.updateDate != null">UPDATE_DATE=#{vo.updateDate},</if>
+                <if test="vo.updateStaff != null">UPDATE_STAFF=#{vo.updateStaff}</if>
+            </set>
+            where ID=#{vo.id}
+        </update>
+
+        <insert id="insert" keyProperty="vo.id">
+            insert into CH_OPERATORS_INFO_MONTH(
+            ID
+            <if test="vo.month!=null">
+                ,MONTH
+            </if>
+            <if test="vo.operatorsNbr!=null">
+                ,OPERATORS_NBR
+            </if>
+            <if test="vo.agentCode!=null">
+                ,AGENT_CODE
+            </if>
+            <if test="vo.operatorsName!=null">
+                ,OPERATORS_NAME
+            </if>
+            <if test="vo.operatorsSname!=null">
+                ,OPERATORS_SNAME
+            </if>
+            <if test="vo.upAgentCode!=null">
+                ,UP_AGENT_CODE
+            </if>
+            <if test="vo.upAgentName!=null">
+                ,UP_AGENT_NAME
+            </if>
+            <if test="vo.topAgentCode!=null">
+                ,TOP_AGENT_CODE
+            </if>
+            <if test="vo.topAgentName!=null">
+                ,TOP_AGENT_NAME
+            </if>
+            <if test="vo.areaId!=null">
+                ,AREA_ID
+            </if>
+            <if test="vo.areaTree!=null">
+                ,AREA_TREE
+            </if>
+            <if test="vo.orgNameShif!=null">
+                ,ORG_NAME_SHIF
+            </if>
+            <if test="vo.orgNameXianf!=null">
+                ,ORG_NAME_XIANF
+            </if>
+            <if test="vo.orgNameZhiju!=null">
+                ,ORG_NAME_ZHIJU
+            </if>
+            <if test="vo.partyId!=null">
+                ,PARTY_ID
+            </if>
+            <if test="vo.operatorsLevel!=null">
+                ,OPERATORS_LEVEL
+            </if>
+            <if test="vo.legalRepr!=null">
+                ,LEGAL_REPR
+            </if>
+            <if test="vo.regionId!=null">
+                ,REGION_ID
+            </if>
+            <if test="vo.operatorsTypeCd!=null">
+                ,OPERATORS_TYPE_CD
+            </if>
+            <if test="vo.ifDefaultHall!=null">
+                ,IF_DEFAULT_HALL
+            </if>
+            <if test="vo.ifForPrice!=null">
+                ,IF_FOR_PRICE
+            </if>
+            <if test="vo.terminalSupplierId!=null">
+                ,TERMINAL_SUPPLIER_ID
+            </if>
+            <if test="vo.sapId!=null">
+                ,SAP_ID
+            </if>
+            <if test="vo.taxpayerType!=null">
+                ,TAXPAYER_TYPE
+            </if>
+            <if test="vo.oneKeySettlement!=null">
+                ,ONE_KEY_SETTLEMENT
+            </if>
+            <if test="vo.airAgentType!=null">
+                ,AIR_AGENT_TYPE
+            </if>
+            <if test="vo.agentContractNum!=null">
+                ,AGENT_CONTRACT_NUM
+            </if>
+            <if test="vo.requestDate!=null">
+                ,REQUEST_DATE
+            </if>
+            <if test="vo.regulatoryManage!=null">
+                ,REGULATORY_MANAGE
+            </if>
+            <if test="vo.intensiveRunmanage!=null">
+                ,INTENSIVE_RUNMANAGE
+            </if>
+            <if test="vo.perfDeposit!=null">
+                ,PERF_DEPOSIT
+            </if>
+            <if test="vo.telFareDepositAcc!=null">
+                ,TEL_FARE_DEPOSIT_ACC
+            </if>
+            <if test="vo.chainType!=null">
+                ,CHAIN_TYPE
+            </if>
+            <if test="vo.nationalChainGeneralName!=null">
+                ,NATIONAL_CHAIN_GENERAL_NAME
+            </if>
+            <if test="vo.provincialChainGeneralName!=null">
+                ,PROVINCIAL_CHAIN_GENERAL_NAME
+            </if>
+            <if test="vo.operatorsLevelJt!=null">
+                ,OPERATORS_LEVEL_JT
+            </if>
+            <if test="vo.operatorsLevelZj!=null">
+                ,OPERATORS_LEVEL_ZJ
+            </if>
+            <if test="vo.nationalEcGeneralName!=null">
+                ,NATIONAL_EC_GENERAL_NAME
+            </if>
+            <if test="vo.nationalGeName!=null">
+                ,NATIONAL_GE_NAME
+            </if>
+            <if test="vo.bankAccount!=null">
+                ,BANK_ACCOUNT
+            </if>
+            <if test="vo.bank!=null">
+                ,BANK
+            </if>
+            <if test="vo.accountName!=null">
+                ,ACCOUNT_NAME
+            </if>
+            <if test="vo.bankNumber!=null">
+                ,BANK_NUMBER
+            </if>
+            <if test="vo.legalPersonCodeType!=null">
+                ,LEGAL_PERSON_CODE_TYPE
+            </if>
+            <if test="vo.legalPersonCode!=null">
+                ,LEGAL_PERSON_CODE
+            </if>
+            <if test="vo.subjectBusinessScope!=null">
+                ,SUBJECT_BUSINESS_SCOPE
+            </if>
+            <if test="vo.agentQualificationAudit!=null">
+                ,AGENT_QUALIFICATION_AUDIT
+            </if>
+            <if test="vo.agentContractCode!=null">
+                ,AGENT_CONTRACT_CODE
+            </if>
+            <if test="vo.dealerMark!=null">
+                ,DEALER_MARK
+            </if>
+            <if test="vo.directlyAffiliatedGroup!=null">
+                ,DIRECTLY_AFFILIATED_GROUP
+            </if>
+            <if test="vo.terminalAgentId!=null">
+                ,TERMINAL_AGENT_ID
+            </if>
+            <if test="vo.operatorsCertType!=null">
+                ,OPERATORS_CERT_TYPE
+            </if>
+            <if test="vo.operatorsCertCode!=null">
+                ,OPERATORS_CERT_CODE
+            </if>
+            <if test="vo.contactAddr!=null">
+                ,CONTACT_ADDR
+            </if>
+            <if test="vo.contactPhone!=null">
+                ,CONTACT_PHONE
+            </if>
+            <if test="vo.contactPerson!=null">
+                ,CONTACT_PERSON
+            </if>
+            <if test="vo.contactMail!=null">
+                ,CONTACT_MAIL
+            </if>
+            <if test="vo.cityBranch!=null">
+                ,CITY_BRANCH
+            </if>
+            <if test="vo.countyBranch!=null">
+                ,COUNTY_BRANCH
+            </if>
+            <if test="vo.supplierBankAccount!=null">
+                ,SUPPLIER_BANK_ACCOUNT
+            </if>
+            <if test="vo.sapBankAccount!=null">
+                ,SAP_BANK_ACCOUNT
+            </if>
+            <if test="vo.telFareDepositAccId!=null">
+                ,TEL_FARE_DEPOSIT_ACC_ID
+            </if>
+            <if test="vo.contractLock!=null">
+                ,CONTRACT_LOCK
+            </if>
+            <if test="vo.blackListMark!=null">
+                ,BLACK_LIST_MARK
+            </if>
+            <if test="vo.jointOper!=null">
+                ,JOINT_OPER
+            </if>
+            <if test="vo.supplierProv!=null">
+                ,SUPPLIER_PROV
+            </if>
+            <if test="vo.supplierCity!=null">
+                ,SUPPLIER_CITY
+            </if>
+            <if test="vo.supplierCounty!=null">
+                ,SUPPLIER_COUNTY
+            </if>
+            <if test="vo.elecGradeCoeff!=null">
+                ,ELEC_GRADE_COEFF
+            </if>
+            <if test="vo.isElecAgent!=null">
+                ,IS_ELEC_AGENT
+            </if>
+            <if test="vo.telBillBankAccA!=null">
+                ,TEL_BILL_BANK_ACC_A
+            </if>
+            <if test="vo.telBillBankAccB!=null">
+                ,TEL_BILL_BANK_ACC_B
+            </if>
+            <if test="vo.telBillBankAccC!=null">
+                ,TEL_BILL_BANK_ACC_C
+            </if>
+            <if test="vo.createDate!=null">
+                ,CREATE_DATE
+            </if>
+            <if test="vo.createStaff!=null">
+                ,CREATE_STAFF
+            </if>
+            <if test="vo.statusCd!=null">
+                ,STATUS_CD
+            </if>
+            <if test="vo.statusDate!=null">
+                ,STATUS_DATE
+            </if>
+            <if test="vo.updateDate!=null">
+                ,UPDATE_DATE
+            </if>
+            <if test="vo.updateStaff!=null">
+                ,UPDATE_STAFF
+            </if>
+            ) values(
+            #{vo.id}
+            <if test="vo.month!=null">
+                ,#{vo.month}
+            </if>
+            <if test="vo.operatorsNbr!=null">
+                ,#{vo.operatorsNbr}
+            </if>
+            <if test="vo.agentCode!=null">
+                ,#{vo.agentCode}
+            </if>
+            <if test="vo.operatorsName!=null">
+                ,#{vo.operatorsName}
+            </if>
+            <if test="vo.operatorsSname!=null">
+                ,#{vo.operatorsSname}
+            </if>
+            <if test="vo.upAgentCode!=null">
+                ,#{vo.upAgentCode}
+            </if>
+            <if test="vo.upAgentName!=null">
+                ,#{vo.upAgentName}
+            </if>
+            <if test="vo.topAgentCode!=null">
+                ,#{vo.topAgentCode}
+            </if>
+            <if test="vo.topAgentName!=null">
+                ,#{vo.topAgentName}
+            </if>
+            <if test="vo.areaId!=null">
+                ,#{vo.areaId}
+            </if>
+            <if test="vo.areaTree!=null">
+                ,#{vo.areaTree}
+            </if>
+            <if test="vo.orgNameShif!=null">
+                ,#{vo.orgNameShif}
+            </if>
+            <if test="vo.orgNameXianf!=null">
+                ,#{vo.orgNameXianf}
+            </if>
+            <if test="vo.orgNameZhiju!=null">
+                ,#{vo.orgNameZhiju}
+            </if>
+            <if test="vo.partyId!=null">
+                ,#{vo.partyId}
+            </if>
+            <if test="vo.operatorsLevel!=null">
+                ,#{vo.operatorsLevel}
+            </if>
+            <if test="vo.legalRepr!=null">
+                ,#{vo.legalRepr}
+            </if>
+            <if test="vo.regionId!=null">
+                ,#{vo.regionId}
+            </if>
+            <if test="vo.operatorsTypeCd!=null">
+                ,#{vo.operatorsTypeCd}
+            </if>
+            <if test="vo.ifDefaultHall!=null">
+                ,#{vo.ifDefaultHall}
+            </if>
+            <if test="vo.ifForPrice!=null">
+                ,#{vo.ifForPrice}
+            </if>
+            <if test="vo.terminalSupplierId!=null">
+                ,#{vo.terminalSupplierId}
+            </if>
+            <if test="vo.sapId!=null">
+                ,#{vo.sapId}
+            </if>
+            <if test="vo.taxpayerType!=null">
+                ,#{vo.taxpayerType}
+            </if>
+            <if test="vo.oneKeySettlement!=null">
+                ,#{vo.oneKeySettlement}
+            </if>
+            <if test="vo.airAgentType!=null">
+                ,#{vo.airAgentType}
+            </if>
+            <if test="vo.agentContractNum!=null">
+                ,#{vo.agentContractNum}
+            </if>
+            <if test="vo.requestDate!=null">
+                ,#{vo.requestDate}
+            </if>
+            <if test="vo.regulatoryManage!=null">
+                ,#{vo.regulatoryManage}
+            </if>
+            <if test="vo.intensiveRunmanage!=null">
+                ,#{vo.intensiveRunmanage}
+            </if>
+            <if test="vo.perfDeposit!=null">
+                ,#{vo.perfDeposit}
+            </if>
+            <if test="vo.telFareDepositAcc!=null">
+                ,#{vo.telFareDepositAcc}
+            </if>
+            <if test="vo.chainType!=null">
+                ,#{vo.chainType}
+            </if>
+            <if test="vo.nationalChainGeneralName!=null">
+                ,#{vo.nationalChainGeneralName}
+            </if>
+            <if test="vo.provincialChainGeneralName!=null">
+                ,#{vo.provincialChainGeneralName}
+            </if>
+            <if test="vo.operatorsLevelJt!=null">
+                ,#{vo.operatorsLevelJt}
+            </if>
+            <if test="vo.operatorsLevelZj!=null">
+                ,#{vo.operatorsLevelZj}
+            </if>
+            <if test="vo.nationalEcGeneralName!=null">
+                ,#{vo.nationalEcGeneralName}
+            </if>
+            <if test="vo.nationalGeName!=null">
+                ,#{vo.nationalGeName}
+            </if>
+            <if test="vo.bankAccount!=null">
+                ,#{vo.bankAccount}
+            </if>
+            <if test="vo.bank!=null">
+                ,#{vo.bank}
+            </if>
+            <if test="vo.accountName!=null">
+                ,#{vo.accountName}
+            </if>
+            <if test="vo.bankNumber!=null">
+                ,#{vo.bankNumber}
+            </if>
+            <if test="vo.legalPersonCodeType!=null">
+                ,#{vo.legalPersonCodeType}
+            </if>
+            <if test="vo.legalPersonCode!=null">
+                ,#{vo.legalPersonCode}
+            </if>
+            <if test="vo.subjectBusinessScope!=null">
+                ,#{vo.subjectBusinessScope}
+            </if>
+            <if test="vo.agentQualificationAudit!=null">
+                ,#{vo.agentQualificationAudit}
+            </if>
+            <if test="vo.agentContractCode!=null">
+                ,#{vo.agentContractCode}
+            </if>
+            <if test="vo.dealerMark!=null">
+                ,#{vo.dealerMark}
+            </if>
+            <if test="vo.directlyAffiliatedGroup!=null">
+                ,#{vo.directlyAffiliatedGroup}
+            </if>
+            <if test="vo.terminalAgentId!=null">
+                ,#{vo.terminalAgentId}
+            </if>
+            <if test="vo.operatorsCertType!=null">
+                ,#{vo.operatorsCertType}
+            </if>
+            <if test="vo.operatorsCertCode!=null">
+                ,#{vo.operatorsCertCode}
+            </if>
+            <if test="vo.contactAddr!=null">
+                ,#{vo.contactAddr}
+            </if>
+            <if test="vo.contactPhone!=null">
+                ,#{vo.contactPhone}
+            </if>
+            <if test="vo.contactPerson!=null">
+                ,#{vo.contactPerson}
+            </if>
+            <if test="vo.contactMail!=null">
+                ,#{vo.contactMail}
+            </if>
+            <if test="vo.cityBranch!=null">
+                ,#{vo.cityBranch}
+            </if>
+            <if test="vo.countyBranch!=null">
+                ,#{vo.countyBranch}
+            </if>
+            <if test="vo.supplierBankAccount!=null">
+                ,#{vo.supplierBankAccount}
+            </if>
+            <if test="vo.sapBankAccount!=null">
+                ,#{vo.sapBankAccount}
+            </if>
+            <if test="vo.telFareDepositAccId!=null">
+                ,#{vo.telFareDepositAccId}
+            </if>
+            <if test="vo.contractLock!=null">
+                ,#{vo.contractLock}
+            </if>
+            <if test="vo.blackListMark!=null">
+                ,#{vo.blackListMark}
+            </if>
+            <if test="vo.jointOper!=null">
+                ,#{vo.jointOper}
+            </if>
+            <if test="vo.supplierProv!=null">
+                ,#{vo.supplierProv}
+            </if>
+            <if test="vo.supplierCity!=null">
+                ,#{vo.supplierCity}
+            </if>
+            <if test="vo.supplierCounty!=null">
+                ,#{vo.supplierCounty}
+            </if>
+            <if test="vo.elecGradeCoeff!=null">
+                ,#{vo.elecGradeCoeff}
+            </if>
+            <if test="vo.isElecAgent!=null">
+                ,#{vo.isElecAgent}
+            </if>
+            <if test="vo.telBillBankAccA!=null">
+                ,#{vo.telBillBankAccA}
+            </if>
+            <if test="vo.telBillBankAccB!=null">
+                ,#{vo.telBillBankAccB}
+            </if>
+            <if test="vo.telBillBankAccC!=null">
+                ,#{vo.telBillBankAccC}
+            </if>
+            <if test="vo.createDate!=null">
+                ,#{vo.createDate}
+            </if>
+            <if test="vo.createStaff!=null">
+                ,#{vo.createStaff}
+            </if>
+            <if test="vo.statusCd!=null">
+                ,#{vo.statusCd}
+            </if>
+            <if test="vo.statusDate!=null">
+                ,#{vo.statusDate}
+            </if>
+            <if test="vo.updateDate!=null">
+                ,#{vo.updateDate}
+            </if>
+            <if test="vo.updateStaff!=null">
+                ,#{vo.updateStaff}
+            </if>
+            )
+        </insert>
+
+        <delete id="delete">
+            delete from CH_OPERATORS_INFO_MONTH
+            where ID=#{rowId}
+        </delete>
+
+<!--        <select id="selectLastId" resultType="long">-->
+<!--            select IFNULL(Max(id),0) from ch_operators_info_month-->
+<!--        </select>-->
+
+<!--        <select id="selectChOperatorsMonthInfo" resultMap="RM_ChOperatorsInfoMonthDo">-->
+<!--            select-->
+<!--            op.OPERATORS_NBR,-->
+<!--            ope.AGENT_CODE,-->
+<!--            op.OPERATORS_NAME,-->
+<!--            op.OPERATORS_SNAME,-->
+<!--            ope2.AGENT_CODE as UP_AGENT_CODE,-->
+<!--            op2.OPERATORS_NAME as UP_AGENT_NAME,-->
+<!--            ope.TOP_AGENT_CODE,-->
+<!--            ope.TOP_AGENT_NAME,-->
+<!--            ope.AREA_ID,-->
+<!--            ope.AREA_TREE,-->
+<!--            og.ORG_NAME_C3 as ORG_NAME_SHIF,-->
+<!--            og.ORG_NAME_C4 as ORG_NAME_XIANF,-->
+<!--            og.ORG_NAME_C5 as ORG_NAME_ZHIJU,-->
+<!--            op.PARTY_ID,-->
+<!--            op.OPERATORS_LEVEL,-->
+<!--            op.LEGAL_REPR,-->
+<!--            op.REGION_ID,-->
+<!--            op.OPERATORS_TYPE_CD,-->
+<!--            ope.IF_DEFAULT_HALL,-->
+<!--            ope.IF_FOR_PRICE,-->
+<!--            ope.TERMINAL_SUPPLIER_ID,-->
+<!--            ope.SAP_ID,-->
+<!--            ope.TAXPAYER_TYPE,-->
+<!--            ope.ONE_KEY_SETTLEMENT,-->
+<!--            ope.AIR_AGENT_TYPE,-->
+<!--            ope.AGENT_CONTRACT_NUM,-->
+<!--            ope.REQUEST_DATE,-->
+<!--            ope.REGULATORY_MANAGE,-->
+<!--            ope.INTENSIVE_RUNMANAGE,-->
+<!--            ope.PERF_DEPOSIT,-->
+<!--            ope.TEL_FARE_DEPOSIT_ACC,-->
+<!--            ope.CHAIN_TYPE,-->
+<!--            ope.NATIONAL_CHAIN_GENERAL_NAME,-->
+<!--            ope.PROVINCIAL_CHAIN_GENERAL_NAME,-->
+<!--            oa2.ATTR_VALUE as OPERATORS_LEVEL_JT,&#45;&#45; 集团经营主体级别-->
+<!--            oa.ATTR_VALUE as OPERATORS_LEVEL_ZJ,&#45;&#45; 省级经营主体级别-->
+<!--            ope.NATIONAL_EC_GENERAL_NAME,-->
+<!--            ope.NATIONAL_GE_NAME,-->
+<!--            ope.BANK_ACCOUNT,-->
+<!--            ope.BANK,-->
+<!--            ope.ACCOUNT_NAME,-->
+<!--            ope.BANK_NUMBER,-->
+<!--            ope.LEGAL_PERSON_CODE_TYPE,-->
+<!--            ope.LEGAL_PERSON_CODE,-->
+<!--            ope.SUBJECT_BUSINESS_SCOPE,-->
+<!--            ope.AGENT_QUALIFICATION_AUDIT,-->
+<!--            ope.AGENT_CONTRACT_CODE,-->
+<!--            ope.DEALER_MARK,-->
+<!--            ope.DIRECTLY_AFFILIATED_GROUP,-->
+<!--            ope.TERMINAL_AGENT_ID,-->
+<!--            ope.CONTACT_ADDR,-->
+<!--            ope.OPERATORS_CERT_TYPE,-->
+<!--            ope.OPERATORS_CERT_CODE,-->
+<!--            ope.CONTACT_ADDR,-->
+<!--            ope.CONTACT_PHONE,-->
+<!--            ope.CONTACT_PERSON,-->
+<!--            ope.CONTACT_MAIL,-->
+<!--            ope.CITY_BRANCH,-->
+<!--            ope.COUNTY_BRANCH,-->
+<!--            ope.SUPPLIER_BANK_ACCOUNT,-->
+<!--            ope.SAP_BANK_ACCOUNT,-->
+<!--            ope.TEL_FARE_DEPOSIT_ACC_ID,-->
+<!--            ope.CONTRACT_LOCK,-->
+<!--            ope.BLACK_LIST_MARK,-->
+<!--            ope.JOINT_OPER,-->
+<!--            ope.SUPPLIER_PROV,-->
+<!--            ope.SUPPLIER_CITY,-->
+<!--            ope.SUPPLIER_COUNTY,-->
+<!--            ope.ELEC_GRADE_COEFF,-->
+<!--            ope.IS_ELEC_AGENT,-->
+<!--            ope.TEL_BILL_BANK_ACC_A,-->
+<!--            ope.TEL_BILL_BANK_ACC_B,-->
+<!--            ope.TEL_BILL_BANK_ACC_C,-->
+<!--            op.CREATE_DATE,-->
+<!--            op.CREATE_STAFF,-->
+<!--            op.STATUS_CD,-->
+<!--            op.STATUS_DATE,-->
+<!--            op.UPDATE_DATE,-->
+<!--            op.UPDATE_STAFF-->
+<!--            from operators op-->
+<!--            LEFT JOIN operators_ext ope ON op.ORG_ID = ope.ORG_ID-->
+<!--            LEFT JOIN org_rel orgrl ON  op.org_id = orgrl.z_org_id  AND orgrl.org_rel_type = '1100' AND orgrl.status_cd = '1000'-->
+<!--            LEFT JOIN operators op2 ON  op2.ORG_ID = orgrl.A_ORG_ID &#45;&#45; 上级代理商名称-->
+<!--            LEFT JOIN operators_ext ope2 ON ope2.ORG_ID = orgrl.A_ORG_ID &#45;&#45; 上级代理商编码-->
+<!--            LEFT JOIN org_attr oa ON op.org_id = oa.org_id AND oa.ATTR_ID = '30001024' AND oa.STATUS_CD= '1000' &#45;&#45; 省经营主体级别-->
+<!--            LEFT JOIN org_attr oa2 ON op.org_id = oa2.org_id AND oa2.ATTR_ID = '120011511436' AND oa2.STATUS_CD= '1000' &#45;&#45; 集团经营主体级别-->
+<!--            LEFT JOIN organization og ON og.ORG_ID = ope.AREA_ID&#45;&#45; 组织县、市、支局-->
+<!--    </select>-->
+
+</mapper>

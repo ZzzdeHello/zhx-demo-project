@@ -1,0 +1,20 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener"/>
+
+    <!-- 标准输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 根下带有两个appender -->
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!--<logger name="com.alibaba.dubbo" level="ERROR">
+        <appender-ref ref="stdout"/>
+    </logger>-->
+
+</configuration>

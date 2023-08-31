@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!-- 设置但JDBC类型为空时,某些驱动程序 要指定值,default:OTHER -->
+        <setting name="jdbcTypeForNull" value="NULL"/>
+        <!-- Map中字段返回null时不返回字段问题 -->
+        <setting name="callSettersOnNulls" value="true"/>
+    </settings>
+
+    <!-- 别名定义 -->
+    <typeAliases>
+
+        <!-- 针对单个别名定义
+        type：类型的路径
+        alias：别名
+         -->
+        <!-- 批量别名定义
+        指定包名，mybatis自动扫描包中的po类，自动定义别名，别名就是类名（首字母大写或小写都可以）
+        -->
+        <package name="com.model"/>
+
+    </typeAliases>
+    <mappers>
+        <!-- // power by http://www.yiibai.com -->
+<!--        <mapper resource="mybatis/mapper/*.xml"/>-->
+    </mappers>
+
+
+</configuration>
