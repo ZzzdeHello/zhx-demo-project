@@ -1,6 +1,7 @@
-package collection.stream.filter;
+package stream.intermediate.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.model.User;
 
 import java.util.*;
 
@@ -22,6 +23,9 @@ public class StreamFilterMain {
         List<Map<String,Object>> orgListResult = (List<Map<String,Object>>)data.get("orgList");
         List<Map<String, Object>> neworgListResult = orgListResult.stream().filter(map -> (boolean) map.get("privFlag")).collect(toList());
         System.out.println(JSON.toJSONString(neworgListResult));
+
+        System.out.println("---------------");
+        streamFilter();
     }
 
     private static void streamFilter() {

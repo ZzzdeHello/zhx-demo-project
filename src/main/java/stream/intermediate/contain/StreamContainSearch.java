@@ -1,4 +1,4 @@
-package collection.stream.contain;
+package stream.intermediate.contain;
 
 import java.util.ArrayList;
 import java.util.HashMap;

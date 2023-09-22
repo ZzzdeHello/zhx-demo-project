@@ -1,0 +1,23 @@
+stream-API 目录说明
+
+STREAM 知识点
+stream java 8 中函数式编程的主角 。将复杂的代码判断流程放入流中，以一行代码完成
+流 ，类似流水线、管道中的水流，一个流只能被处理一次，在一段输入，一段输出。
+stream也可理解成高级迭代器
+
+构建stream流
+intermediate 中间操作，对流中数据进行过滤和映射等，产生新的流
+    - filter 返回true的是要保存下来的数据
+    - map 映射
+    - peek 遍历和foreach一致,但它是中间操作
+    - distinct 去重
+    - sorted 排序
+    - limit 裁剪，保留前面元素
+    - skip 裁剪，保留后面元素
+terminal 终结操作，一个流只会有一个终结操作，在此之后流就不存在了
+    - forEach
+    - collect
+    - min
+    - max
+    - count
+    - findFirst、findAny、iterator
