@@ -25,4 +25,7 @@ public class User {
         this.sex = sex;
         this.area = area;
     }
+
+    public User() {
+    }
 }

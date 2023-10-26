@@ -16,11 +16,11 @@ import java.util.stream.Collectors;
 public class MapStreamDemo {
     public static void main(String[] args) {
         User user = new User();
-        user.setName("小朱").setAge(20).setDescription("一个帅比");
+        user.setName("小朱").setAge(20).setArea("一个帅比");
         User user1 = new User();
-        user1.setName("小明").setAge(21).setDescription("一个大聪明");
+        user1.setName("小明").setAge(21).setArea("一个大聪明");
         User user2 = new User();
-        user2.setName("小强").setAge(19).setDescription("一个小晴明");
+        user2.setName("小强").setAge(19).setArea("一个小晴明");
         List<User> list = new ArrayList<>();
         list.add(user);
         list.add(user1);
