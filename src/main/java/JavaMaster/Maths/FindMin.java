@@ -22,7 +22,7 @@ public class FindMin {
   }
 
   /**
-   * Find the minimum number of an array of numbers.
+   * Find the minimum zzzde.code.technic.number of an array of numbers.
    *
    * @param array the array contains element
    * @return min value

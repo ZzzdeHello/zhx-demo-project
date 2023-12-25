@@ -21,7 +21,7 @@ public class CRC32 {
         crc32 = (crc32 << 1) ^ 0x04C11DB7; // xor with polynomial
       else crc32 = (crc32 << 1);
     }
-    crc32 = Integer.reverse(crc32); // result reflect
+    crc32 = Integer.reverse(crc32); // result zzzde.project.technic.reflect
     return crc32 ^ 0xFFFFFFFF; // final xor value
   }
 }

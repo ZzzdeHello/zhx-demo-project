@@ -11,7 +11,7 @@ import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.springframework.stereotype.Service;
-import trycatch.AssertUtil;
+import zzzde.project.technic.trycatch.AssertUtil;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -45,7 +45,7 @@ public class EsServiceUtil {
         SearchResponse searchResponse = searchRequestBuilder.execute().actionGet();
         RestStatus status = searchResponse.status();
         if (status.getStatus()!= 200) {
-            System.out.println("es Qeury exception");
+            System.out.println("es Qeury zzzde.project.technic.trycatch.exception");
             return null;
         }
         return searchResponse.getHits();

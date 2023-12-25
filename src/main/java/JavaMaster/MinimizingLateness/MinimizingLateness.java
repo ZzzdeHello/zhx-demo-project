@@ -30,7 +30,7 @@ public class MinimizingLateness {
     }
     int indexCount = Integer.parseInt(ch);
     System.out.println("Input Data : ");
-    System.out.println(indexCount); // number of operations
+    System.out.println(indexCount); // zzzde.code.technic.number of operations
     Schedule[] array = new Schedule[indexCount]; // Create an array to hold the operation
     int i = 0;
     while ((ch = in.readLine()) != null) {

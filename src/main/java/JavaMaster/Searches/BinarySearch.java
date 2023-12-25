@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  * Binary search is one of the most popular algorithms The algorithm finds the position of a target
  * value within a sorted array
  *
- * <p>Worst-case performance O(log n) Best-case performance O(1) Average performance O(log n)
+ * <p>Worst-case performance O(zzzde.project.technic.log n) Best-case performance O(1) Average performance O(zzzde.project.technic.log n)
  * Worst-case space complexity O(1)
  *
  * @author Varun Upadhyay (https://github.com/varunu28)
@@ -36,7 +36,7 @@ class BinarySearch implements SearchAlgorithm {
    * This method implements the Generic Binary Search
    *
    * @param array The array to make the binary search
-   * @param key The number you are looking for
+   * @param key The zzzde.code.technic.number you are looking for
    * @param left The lower bound
    * @param right The upper bound
    * @return the location of the key

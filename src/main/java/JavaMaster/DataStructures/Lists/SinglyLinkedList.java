@@ -174,7 +174,7 @@ public class SinglyLinkedList {
   }
 
   /**
-   * Test if the value key is present in the list.
+   * zzzde.demo.main.Test if the value key is present in the list.
    *
    * @param key the value to be searched.
    * @return {@code true} if key is present in the list, otherwise {@code false}.
@@ -223,7 +223,7 @@ public class SinglyLinkedList {
     assert list.size() == 0 && list.count() == 0;
     assert list.toString().equals("");
 
-    /* Test insert function */
+    /* zzzde.demo.main.Test insert zzzde.code.technic.function */
     list.insertHead(5);
     list.insertHead(7);
     list.insertHead(10);
@@ -231,13 +231,13 @@ public class SinglyLinkedList {
     list.insertNth(1, 4);
     assert list.toString().equals("10->7->5->3->1");
 
-    /* Test search function */
+    /* zzzde.demo.main.Test search zzzde.code.technic.function */
     assert list.search(10) && list.search(5) && list.search(1) && !list.search(100);
 
-    /* Test get function */
+    /* zzzde.demo.main.Test get zzzde.code.technic.function */
     assert list.getNth(0) == 10 && list.getNth(2) == 5 && list.getNth(4) == 1;
 
-    /* Test delete function */
+    /* zzzde.demo.main.Test delete zzzde.code.technic.function */
     list.deleteHead();
     list.deleteNth(1);
     list.delete();

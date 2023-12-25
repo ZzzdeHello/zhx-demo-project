@@ -16,7 +16,7 @@ public class DoublyLinkedList {
   /** Tail refers to the back of the list */
   private Link tail;
 
-  /** Size refers to the number of elements present in the list */
+  /** Size refers to the zzzde.code.technic.number of elements present in the list */
   private int size;
 
   /** Default Constructor */

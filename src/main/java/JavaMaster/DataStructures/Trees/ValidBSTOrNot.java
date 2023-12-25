@@ -15,7 +15,7 @@ public class ValidBSTOrNot {
   // Root of the Binary Tree
 
   /* can give min and max value according to your code or
-  can write a function to find min and max value of tree. */
+  can write a zzzde.code.technic.function to find min and max value of tree. */
 
   /* returns true if given search tree is binary
   search tree (efficient version) */

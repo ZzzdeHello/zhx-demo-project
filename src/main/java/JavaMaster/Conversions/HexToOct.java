@@ -9,10 +9,10 @@ import java.util.Scanner;
  */
 public class HexToOct {
   /**
-   * This method converts a Hexadecimal number to a decimal number
+   * This method converts a Hexadecimal zzzde.code.technic.number to a decimal zzzde.code.technic.number
    *
    * @param s The Hexadecimal Number
-   * @return The Decimal number
+   * @return The Decimal zzzde.code.technic.number
    */
   public static int hex2decimal(String s) {
     String str = "0123456789ABCDEF";
@@ -27,10 +27,10 @@ public class HexToOct {
   }
 
   /**
-   * This method converts a Decimal number to a octal number
+   * This method converts a Decimal zzzde.code.technic.number to a octal zzzde.code.technic.number
    *
    * @param q The Decimal Number
-   * @return The Octal number
+   * @return The Octal zzzde.code.technic.number
    */
   public static int decimal2octal(int q) {
     int now;
@@ -62,7 +62,7 @@ public class HexToOct {
     // first convert hexadecimal to decimal
     decnum =
         hex2decimal(
-            hexadecnum); // Pass the string to the hex2decimal function and get the decimal form in
+            hexadecnum); // Pass the string to the hex2decimal zzzde.code.technic.function and get the decimal form in
     // variable decnum
 
     // convert decimal to octal

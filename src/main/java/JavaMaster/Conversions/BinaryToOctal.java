@@ -3,7 +3,7 @@ package JavaMaster.Conversions;
 import java.util.Scanner;
 
 /**
- * Converts any Binary number to an Octal Number
+ * Converts any Binary zzzde.code.technic.number to an Octal Number
  *
  * @author Zachary Jones
  */
@@ -16,17 +16,17 @@ public class BinaryToOctal {
    */
   public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Input the binary number: ");
+    System.out.println("Input the binary zzzde.code.technic.number: ");
     int b = sc.nextInt();
     System.out.println("Octal equivalent: " + convertBinaryToOctal(b));
     sc.close();
   }
 
   /**
-   * This method converts a binary number to an octal number.
+   * This method converts a binary zzzde.code.technic.number to an octal zzzde.code.technic.number.
    *
-   * @param binary The binary number
-   * @return The octal number
+   * @param binary The binary zzzde.code.technic.number
+   * @return The octal zzzde.code.technic.number
    */
   public static String convertBinaryToOctal(int binary) {
     String octal = "";

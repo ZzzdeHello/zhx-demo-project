@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="project.myBatis.dao.pst2_dao.TestDao">
+<mapper namespace="zzzde.project.technic.projmybatis.persistent.dao.pst2_dao.TestDao">
 
     <select id="selectItem" resultType="java.util.Map">
         select * from contact_order_track

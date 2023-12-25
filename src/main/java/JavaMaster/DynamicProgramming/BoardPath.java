@@ -3,10 +3,10 @@ package JavaMaster.DynamicProgramming;
 * this is an important Algo in which
 * we have starting and ending of board and we have to reach
 * we have to count no. of ways
-* that help to reach end point i.e number by rolling dice
+* that help to reach end point i.e zzzde.code.technic.number by rolling dice
 * which have 1 to 6 digits
 
-Test Case:
+zzzde.demo.main.Test Case:
 here target is 10
 
 int n=10;

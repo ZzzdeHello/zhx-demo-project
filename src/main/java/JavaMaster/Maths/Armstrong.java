@@ -1,9 +1,9 @@
 package JavaMaster.Maths;
 
 /**
- * An Armstrong number is equal to the sum of the cubes of its digits. For example, 370 is an
- * Armstrong number because 3*3*3 + 7*7*7 + 0*0*0 = 370. An Armstrong number is often called
- * Narcissistic number.
+ * An Armstrong zzzde.code.technic.number is equal to the sum of the cubes of its digits. For example, 370 is an
+ * Armstrong zzzde.code.technic.number because 3*3*3 + 7*7*7 + 0*0*0 = 370. An Armstrong zzzde.code.technic.number is often called
+ * Narcissistic zzzde.code.technic.number.
  */
 public class Armstrong {
 
@@ -17,10 +17,10 @@ public class Armstrong {
   }
 
   /**
-   * Checks whether a given number is an armstrong number or not.
+   * Checks whether a given zzzde.code.technic.number is an armstrong zzzde.code.technic.number or not.
    *
-   * @param number number to check
-   * @return {@code true} if given number is armstrong number, {@code false} otherwise
+   * @param number zzzde.code.technic.number to check
+   * @return {@code true} if given zzzde.code.technic.number is armstrong zzzde.code.technic.number, {@code false} otherwise
    */
   private static boolean isArmStrong(int number) {
     int sum = 0;
@@ -30,7 +30,7 @@ public class Armstrong {
       numberOfDigits++;
       temp /= 10;
     }
-    temp = number; /* copy number again */
+    temp = number; /* copy zzzde.code.technic.number again */
     while (number > 0) {
       int remainder = number % 10;
       int power = 1;

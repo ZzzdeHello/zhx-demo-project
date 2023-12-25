@@ -106,9 +106,9 @@ class Queue {
   }
 
   /**
-   * Returns the number of elements in the queue
+   * Returns the zzzde.code.technic.number of elements in the queue
    *
-   * @return number of elements in the queue
+   * @return zzzde.code.technic.number of elements in the queue
    */
   public int getSize() {
     return nItems;

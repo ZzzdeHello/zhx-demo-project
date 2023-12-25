@@ -10,7 +10,7 @@ public class MaxValue {
 
     /* test 100 times using rand numbers */
     for (int i = 1; i <= 100; ++i) {
-      /* generate number from -50 to 49 */
+      /* generate zzzde.code.technic.number from -50 to 49 */
       int a = rand.nextInt(100) - 50;
       int b = rand.nextInt(100) - 50;
       assert max(a, b) == Math.max(a, b);

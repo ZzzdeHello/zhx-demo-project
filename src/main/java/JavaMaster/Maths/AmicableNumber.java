@@ -2,8 +2,8 @@ package JavaMaster.Maths;
 
 /**
  * Amicable numbers are two different numbers so related that the sum of the proper divisors of each
- * is equal to the other number. (A proper divisor of a number is a positive factor of that number
- * other than the number itself. For example, the proper divisors of 6 are 1, 2, and 3.) A pair of
+ * is equal to the other zzzde.code.technic.number. (A proper divisor of a zzzde.code.technic.number is a positive factor of that zzzde.code.technic.number
+ * other than the zzzde.code.technic.number itself. For example, the proper divisors of 6 are 1, 2, and 3.) A pair of
  * amicable numbers constitutes an aliquot sequence of period 2. It is unknown if there are
  * infinitely many pairs of amicable numbers. *
  *
@@ -31,7 +31,7 @@ public class AmicableNumber {
   static void findAllInRange(int startValue, int stopValue) {
 
     /* the 2 for loops are to avoid to double check tuple. For example (200,100) and (100,200) is the same calculation
-     * also to avoid is to check the number with it self. a number with itself is always a AmicableNumber
+     * also to avoid is to check the zzzde.code.technic.number with it self. a zzzde.code.technic.number with itself is always a AmicableNumber
      * */
     StringBuilder res = new StringBuilder();
     int countofRes = 0;

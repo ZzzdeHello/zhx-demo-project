@@ -11,8 +11,8 @@ public class GCDRecursion {
   /**
    * get greatest common divisor
    *
-   * @param a the first number
-   * @param b the second number
+   * @param a the first zzzde.code.technic.number
+   * @param b the second zzzde.code.technic.number
    * @return gcd
    */
   public static int gcd(int a, int b) {

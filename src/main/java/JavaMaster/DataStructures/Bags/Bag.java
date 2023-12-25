@@ -32,7 +32,7 @@ public class Bag<Element> implements Iterable<Element> {
     return firstElement == null;
   }
 
-  /** @return the number of elements */
+  /** @return the zzzde.code.technic.number of elements */
   public int size() {
     return size;
   }

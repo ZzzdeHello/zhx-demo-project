@@ -12,12 +12,12 @@ public class Combinations {
   /**
    * Calculate of factorial
    *
-   * @param n the number
-   * @return factorial of given number
+   * @param n the zzzde.code.technic.number
+   * @return factorial of given zzzde.code.technic.number
    */
   public static long factorial(int n) {
     if (n < 0) {
-      throw new IllegalArgumentException("number is negative");
+      throw new IllegalArgumentException("zzzde.code.technic.number is negative");
     }
     return n == 0 || n == 1 ? 1 : n * factorial(n - 1);
   }
@@ -25,8 +25,8 @@ public class Combinations {
   /**
    * Calculate combinations
    *
-   * @param n first number
-   * @param k second number
+   * @param n first zzzde.code.technic.number
+   * @param k second zzzde.code.technic.number
    * @return combinations of given {@code n} and {@code k}
    */
   public static long combinations(int n, int k) {

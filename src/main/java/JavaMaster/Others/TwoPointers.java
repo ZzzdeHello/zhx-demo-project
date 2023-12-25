@@ -27,11 +27,11 @@ class TwoPointers {
    * such that their sum is equal to key.
    *
    * @param arr the array contains elements
-   * @param key the number to search
+   * @param key the zzzde.code.technic.number to search
    * @return {@code true} if there exists a pair of elements, {@code false} otherwise.
    */
   private static boolean isPairedSum(int[] arr, int key) {
-    /* array sorting is necessary for this algorithm to function correctly */
+    /* array sorting is necessary for this algorithm to zzzde.code.technic.function correctly */
     Arrays.sort(arr);
     int i = 0; /* index of first element */
     int j = arr.length - 1; /* index of last element */

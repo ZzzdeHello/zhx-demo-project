@@ -33,7 +33,7 @@ public class CRCAlgorithm {
    * The algorithm's main constructor. The most significant variables, used in the algorithm, are
    * set in their initial values.
    *
-   * @param str The binary number P, in a string form, which is used by the CRC algorithm
+   * @param str The binary zzzde.code.technic.number P, in a string form, which is used by the CRC algorithm
    * @param size The size of every transmitted message
    * @param ber The Bit Error Rate
    */
@@ -57,7 +57,7 @@ public class CRCAlgorithm {
   /**
    * Returns the counter wrongMess
    *
-   * @return wrongMess, the number of Wrong Messages
+   * @return wrongMess, the zzzde.code.technic.number of Wrong Messages
    */
   public int getWrongMess() {
     return wrongMess;
@@ -66,7 +66,7 @@ public class CRCAlgorithm {
   /**
    * Returns the counter wrongMessCaught
    *
-   * @return wrongMessCaught, the number of wrong messages, which are caught by the CRC algoriithm
+   * @return wrongMessCaught, the zzzde.code.technic.number of wrong messages, which are caught by the CRC algoriithm
    */
   public int getWrongMessCaught() {
     return wrongMessCaught;
@@ -75,7 +75,7 @@ public class CRCAlgorithm {
   /**
    * Returns the counter wrongMessNotCaught
    *
-   * @return wrongMessNotCaught, the number of wrong messages, which are not caught by the CRC
+   * @return wrongMessNotCaught, the zzzde.code.technic.number of wrong messages, which are not caught by the CRC
    *     algorithm
    */
   public int getWrongMessNotCaught() {
@@ -85,14 +85,14 @@ public class CRCAlgorithm {
   /**
    * Returns the counter correctMess
    *
-   * @return correctMess, the number of the Correct Messages
+   * @return correctMess, the zzzde.code.technic.number of the Correct Messages
    */
   public int getCorrectMess() {
     return correctMess;
   }
 
   /**
-   * Resets some of the object's values, used on the main function, so that it can be re-used, in
+   * Resets some of the object's values, used on the main zzzde.code.technic.function, so that it can be re-used, in
    * order not to waste too much memory and time, by creating new objects.
    */
   public void refactor() {
@@ -167,7 +167,7 @@ public class CRCAlgorithm {
   /**
    * Once the message is transmitted, some of it's elements, is possible to change from 1 to 0, or
    * from 0 to 1, because of the Bit Error Rate (ber). For every element of the message, a random
-   * double number is created. If that number is smaller than ber, then the spesific element
+   * double zzzde.code.technic.number is created. If that zzzde.code.technic.number is smaller than ber, then the spesific element
    * changes. On the other hand, if it's bigger than ber, it does not. Based on these changes. the
    * boolean variable messageChanged, gets the value: true, or false.
    */

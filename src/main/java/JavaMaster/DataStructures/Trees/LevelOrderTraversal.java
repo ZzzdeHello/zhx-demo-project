@@ -19,14 +19,14 @@ public class LevelOrderTraversal {
     this.root = root;
   }
 
-  /* function to print level order traversal of tree*/
+  /* zzzde.code.technic.function to print level order traversal of tree*/
   void printLevelOrder() {
     int h = height(root);
     int i;
     for (i = 1; i <= h; i++) printGivenLevel(root, i);
   }
 
-  /* Compute the "height" of a tree -- the number of
+  /* Compute the "height" of a tree -- the zzzde.code.technic.number of
   nodes along the longest path from the root node
   down to the farthest leaf node.*/
   int height(Node root) {

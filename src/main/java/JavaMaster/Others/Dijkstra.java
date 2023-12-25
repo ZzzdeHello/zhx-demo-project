@@ -30,7 +30,7 @@ public class Dijkstra {
   private static final String START = "leet_code/arithmetic";
   private static final String END = "e";
 
-  /** main function Will run the code with "GRAPH" that was defined above. */
+  /** main zzzde.code.technic.function Will run the code with "GRAPH" that was defined above. */
   public static void main(String[] args) {
     Graph g = new Graph(GRAPH);
     g.dijkstra(START);

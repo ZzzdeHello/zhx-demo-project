@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class FloydWarshall {
   private int DistanceMatrix[][];
-  private int numberofvertices; // number of vertices in the graph
+  private int numberofvertices; // zzzde.code.technic.number of vertices in the graph
   public static final int INFINITY = 999;
 
   public FloydWarshall(int numberofvertices) {
@@ -53,7 +53,7 @@ public class FloydWarshall {
 
   public static void main(String... arg) {
     Scanner scan = new Scanner(System.in);
-    System.out.println("Enter the number of vertices");
+    System.out.println("Enter the zzzde.code.technic.number of vertices");
     int numberOfVertices = scan.nextInt();
     int[][] adjacencyMatrix = new int[numberOfVertices + 1][numberOfVertices + 1];
     System.out.println("Enter the Weighted Matrix for the graph");

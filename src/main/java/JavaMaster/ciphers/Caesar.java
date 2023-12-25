@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * A Java implementation of Caesar Cipher. /It is a type of substitution cipher in which each letter
- * in the plaintext is replaced by a letter some fixed number of positions down the alphabet. /
+ * in the plaintext is replaced by a letter some fixed zzzde.code.technic.number of positions down the alphabet. /
  *
  * @author FAHRI YARDIMCI
  * @author khalil2535
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Caesar {
 
   /**
-   * Encrypt text by shifting every Latin char by add number shift for ASCII Example : A + 1 -> B
+   * Encrypt text by shifting every Latin char by add zzzde.code.technic.number shift for ASCII Example : A + 1 -> B
    *
    * @param message
    * @param shift
@@ -33,12 +33,12 @@ public class Caesar {
       if (IsCapitalLatinLetter(current)) {
 
         current += shift;
-        encoded += (char) (current > 'Z' ? current - 26 : current); // 26 = number of latin letters
+        encoded += (char) (current > 'Z' ? current - 26 : current); // 26 = zzzde.code.technic.number of latin letters
 
       } else if (IsSmallLatinLetter(current)) {
 
         current += shift;
-        encoded += (char) (current > 'z' ? current - 26 : current); // 26 = number of latin letters
+        encoded += (char) (current > 'z' ? current - 26 : current); // 26 = zzzde.code.technic.number of latin letters
 
       } else {
         encoded += current;
@@ -65,12 +65,12 @@ public class Caesar {
       if (IsCapitalLatinLetter(current)) {
 
         current -= shift;
-        decoded += (char) (current < 'A' ? current + 26 : current); // 26 = number of latin letters
+        decoded += (char) (current < 'A' ? current + 26 : current); // 26 = zzzde.code.technic.number of latin letters
 
       } else if (IsSmallLatinLetter(current)) {
 
         current -= shift;
-        decoded += (char) (current < 'a' ? current + 26 : current); // 26 = number of latin letters
+        decoded += (char) (current < 'a' ? current + 26 : current); // 26 = zzzde.code.technic.number of latin letters
 
       } else {
         decoded += current;
@@ -100,7 +100,7 @@ public class Caesar {
     System.out.println("Please enter the message (Latin Alphabet)");
     String message = input.nextLine();
     System.out.println(message);
-    System.out.println("Please enter the shift number");
+    System.out.println("Please enter the shift zzzde.code.technic.number");
     int shift = input.nextInt() % 26;
     System.out.println("(E)ncode or (D)ecode ?");
     char choice = input.next().charAt(0);
@@ -108,7 +108,7 @@ public class Caesar {
       case 'E':
       case 'e':
         System.out.println(
-            "ENCODED MESSAGE IS \n" + encode(message, shift)); // send our function to handle
+            "ENCODED MESSAGE IS \n" + encode(message, shift)); // send our zzzde.code.technic.function to handle
         break;
       case 'D':
       case 'd':

@@ -63,13 +63,13 @@ public class MinPriorityQueue {
   }
 
   // heap sorting can be done by performing
-  // delete function to the number of times of the size of the heap
+  // delete zzzde.code.technic.function to the zzzde.code.technic.number of times of the size of the heap
   // it returns reverse sort because it is a min priority queue
   public void heapSort() {
     for (int i = 1; i < this.capacity; i++) this.delete();
   }
 
-  // this function reorders the heap after every delete function
+  // this zzzde.code.technic.function reorders the heap after every delete zzzde.code.technic.function
   private void sink() {
     int k = 1;
     while (2 * k <= this.size || 2 * k + 1 <= this.size) {

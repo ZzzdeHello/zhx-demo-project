@@ -30,7 +30,7 @@ public class HexaDecimalToDecimal {
 
     dec_output = getHexaToDec(hexa_Input);
     /*
-    Pass the string to the getHexaToDec function
+    Pass the string to the getHexaToDec zzzde.code.technic.function
     and it returns the decimal form in the variable dec_output.
     */
     System.out.println("Number in Decimal: " + dec_output);

@@ -8,11 +8,11 @@ public class PalindromePrime {
     Scanner in = new Scanner(System.in);
     System.out.println("Enter the quantity of First Palindromic Primes you want");
     int n = in.nextInt(); // Input of how many first pallindromic prime we want
-    functioning(n); // calling function - functioning
+    functioning(n); // calling zzzde.code.technic.function - functioning
     in.close();
   }
 
-  public static boolean prime(int num) { // checking if number is prime or not
+  public static boolean prime(int num) { // checking if zzzde.code.technic.number is prime or not
     for (int divisor = 3; divisor <= Math.sqrt(num); divisor += 2) {
       if (num % divisor == 0) {
         return false; //  false if not prime
@@ -21,7 +21,7 @@ public class PalindromePrime {
     return true; // True if prime
   }
 
-  public static int reverse(int n) { //  Returns  the reverse of the number
+  public static int reverse(int n) { //  Returns  the reverse of the zzzde.code.technic.number
     int reverse = 0;
     while (n != 0) {
       reverse *= 10;
@@ -37,7 +37,7 @@ public class PalindromePrime {
     int count = 1;
     int num = 3;
     while (count < y) {
-      if (num == reverse(num) && prime(num)) { // number is prime and it's reverse is same
+      if (num == reverse(num) && prime(num)) { // zzzde.code.technic.number is prime and it's reverse is same
         count++; // counts check when to terminate while loop
         System.out.print(num + "\n"); // print the Palindromic Prime
       }

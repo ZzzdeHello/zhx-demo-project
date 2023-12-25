@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Class for converting from "any" base to "any" other base, when "any" means from 2-36. Works by
  * going from base 1 to decimal to base 2. Includes auxiliary method for determining whether a
- * number is valid for a given base.
+ * zzzde.code.technic.number is valid for a given base.
  *
  * @author Michael Rolland
  * @version 2017.10.10
@@ -26,7 +26,7 @@ public class AnyBaseToAnyBase {
     int b1, b2;
     while (true) {
       try {
-        System.out.print("Enter number: ");
+        System.out.print("Enter zzzde.code.technic.number: ");
         n = in.next();
         System.out.print(
             "Enter beginning base (between " + MINIMUM_BASE + " and " + MAXIMUM_BASE + "): ");
@@ -36,7 +36,7 @@ public class AnyBaseToAnyBase {
           continue;
         }
         if (!validForBase(n, b1)) {
-          System.out.println("The number is invalid for this base!");
+          System.out.println("The zzzde.code.technic.number is invalid for this base!");
           continue;
         }
         System.out.print(
@@ -56,7 +56,7 @@ public class AnyBaseToAnyBase {
     in.close();
   }
 
-  /** Checks if a number (as a String) is valid for a given base. */
+  /** Checks if a zzzde.code.technic.number (as a String) is valid for a given base. */
   public static boolean validForBase(String n, int base) {
     char[] validDigits = {
       '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
@@ -95,7 +95,7 @@ public class AnyBaseToAnyBase {
     for (int i = 0; i < n.length(); i++) {
       // store the character in charB1
       charB1 = n.charAt(i);
-      // if it is a non-number, convert it to a decimal value >9 and store it in charB2
+      // if it is a non-zzzde.code.technic.number, convert it to a decimal value >9 and store it in charB2
       if (charB1 >= 'A' && charB1 <= 'Z') charB2 = 10 + (charB1 - 'A');
       // Else, store the integer value in charB2
       else charB2 = charB1 - '0';
@@ -105,19 +105,19 @@ public class AnyBaseToAnyBase {
     }
 
     // Converting the decimal value to base b2:
-    // A number is converted from decimal to another base
+    // A zzzde.code.technic.number is converted from decimal to another base
     // by continuously dividing by the base and recording
-    // the remainder until the quotient is zero. The number in the
+    // the remainder until the quotient is zero. The zzzde.code.technic.number in the
     // new base is the remainders, with the last remainder
     // being the left-most digit.
     if (0 == decimalValue) return "0";
     // While the quotient is NOT zero:
     while (decimalValue != 0) {
       // If the remainder is a digit < 10, simply add it to
-      // the left side of the new number.
+      // the left side of the new zzzde.code.technic.number.
       if (decimalValue % b2 < 10) output = Integer.toString(decimalValue % b2) + output;
       // If the remainder is >= 10, add a character with the
-      // corresponding value to the new number. (A = 10, B = 11, C = 12, ...)
+      // corresponding value to the new zzzde.code.technic.number. (A = 10, B = 11, C = 12, ...)
       else output = (char) ((decimalValue % b2) + 55) + output;
       // Divide by the new base again
       decimalValue /= b2;

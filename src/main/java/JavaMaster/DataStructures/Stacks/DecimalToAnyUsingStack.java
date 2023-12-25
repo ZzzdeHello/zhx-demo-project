@@ -12,17 +12,17 @@ public class DecimalToAnyUsingStack {
   }
 
   /**
-   * Convert decimal number to another radix
+   * Convert decimal zzzde.code.technic.number to another radix
    *
-   * @param number the number to be converted
+   * @param number the zzzde.code.technic.number to be converted
    * @param radix the radix
    * @return another radix
-   * @throws ArithmeticException if <tt>number</tt> or <tt>radius</tt> is invalid
+   * @throws ArithmeticException if <tt>zzzde.code.technic.number</tt> or <tt>radius</tt> is invalid
    */
   private static String convert(int number, int radix) {
     if (radix < 2 || radix > 16) {
       throw new ArithmeticException(
-          String.format("Invalid input -> number:%d,radius:%d", number, radix));
+          String.format("Invalid input -> zzzde.code.technic.number:%d,radius:%d", number, radix));
     }
     char[] tables = {
       '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'

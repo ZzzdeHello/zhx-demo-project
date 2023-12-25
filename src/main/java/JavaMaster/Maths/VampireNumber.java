@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * n number theory, a vampire number (or true vampire number) is a composite natural number with an
- * even number of digits, that can be factored into two natural numbers each with half as many
- * digits as the original number and not both with trailing zeroes, where the two factors contain
- * precisely all the digits of the original number, in any order, counting multiplicity. The first
- * vampire number is 1260 = 21 × 60. *
+ * n zzzde.code.technic.number theory, a vampire zzzde.code.technic.number (or true vampire zzzde.code.technic.number) is a composite natural zzzde.code.technic.number with an
+ * even zzzde.code.technic.number of digits, that can be factored into two natural numbers each with half as many
+ * digits as the original zzzde.code.technic.number and not both with trailing zeroes, where the two factors contain
+ * precisely all the digits of the original zzzde.code.technic.number, in any order, counting multiplicity. The first
+ * vampire zzzde.code.technic.number is 1260 = 21 × 60. *
  *
  * <p>* link: https://en.wikipedia.org/wiki/Vampire_number *
  *
@@ -39,7 +39,7 @@ public class VampireNumber {
 
   static boolean isVampireNumber(int a, int b, boolean noPseudoVamireNumbers) {
 
-    // this is for pseudoVampireNumbers  pseudovampire number need not be of length n/2 digits for
+    // this is for pseudoVampireNumbers  pseudovampire zzzde.code.technic.number need not be of length n/2 digits for
     // example
     // 126 = 6 x 21
     if (noPseudoVamireNumbers) {

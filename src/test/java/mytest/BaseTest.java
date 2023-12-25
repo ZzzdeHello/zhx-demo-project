@@ -1,38 +1,14 @@
 package mytest;
 
-import com.alibaba.excel.EasyExcel;
-import com.alibaba.excel.ExcelReader;
-import com.alibaba.excel.ExcelWriter;
-import com.alibaba.excel.read.metadata.ReadSheet;
-import com.alibaba.excel.write.metadata.WriteSheet;
-import com.alibaba.fastjson.JSON;
 //import excelPackage.readExcel.DemoDataListener;
-import org.apache.commons.lang3.StringUtils;
-import org.ehcache.xml.model.TimeUnit;
-import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.common.unit.TimeValue;
-import org.elasticsearch.index.query.MatchAllQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.TermQueryBuilder;
-import org.elasticsearch.search.SearchHit;
-import org.elasticsearch.search.builder.SearchSourceBuilder;
-import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+        import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import project.myBatis.service_api.TestPstEvn;
+import zzzde.project.technic.projmybatis.serevice.TestPstEvn;
 
 import javax.annotation.Resource;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+        import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,13 +19,13 @@ public class BaseTest {
 
 //    @Resource
 //    ProductDao productDao;
-//    @Test
+//    @zzzde.demo.main.Test
 //    public void test(){
 //        List<Map> maps = productDao.selectProduct();
 //        System.out.println(maps.toString());
 //    }
 
-//    @Test
+//    @zzzde.demo.main.Test
 //    public void test2(){
 //        List<Map> maps = productDao.selectProductOrShopProduct("1");
 //        System.out.println(maps.toString());
@@ -69,7 +45,7 @@ public class BaseTest {
      * <p>1. 创建excel对应的实体对象 参照{@link}
      * <p>2. 直接写即可
      */
-//    @Test
+//    @zzzde.demo.main.Test
 //    public void simpleWrite() throws Exception {
 //        // 写法1
 //        String fileNamePath = "E:\\WorkProject\\DemoDATEBASE1\\src\\main\\java\\excelPackage\\writeExcel\\writeExcel";
@@ -98,7 +74,7 @@ public class BaseTest {
 //  `product_type` varchar(32) NOT NULL,
 //  `sale_price` int(11) DEFAULT NULL,
 //  `purchase_price` int(11) DEFAULT NULL,
-//  `regist_date` date DEFAULT NULL,
+//  `regist_date` zzzde.code.technic.date DEFAULT NULL,
 //  `da` bigint(16) DEFAULT NULL,
 //    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //    private List<ProductData> data() throws ParseException {
@@ -132,8 +108,8 @@ public class BaseTest {
 //        InputStreamReader inputStreamReader = null;
 //        BufferedReader bfReader = null;
 //        try{
-//            String localDir = System.getProperty("user.dir") + "/file/es/";
-//            String localErrorDir =  System.getProperty("user.dir") + "/file/es/error/";
+//            String localDir = System.getProperty("user.dir") + "/zzzde.project.technic.file/es/";
+//            String localErrorDir =  System.getProperty("user.dir") + "/zzzde.project.technic.file/es/error/";
 //            List<String> errorList = new ArrayList<>();
 //            File localFile = new File(localDir);
 //            File[] listFile = localFile.listFiles();

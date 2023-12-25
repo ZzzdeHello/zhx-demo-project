@@ -12,7 +12,7 @@ import java.util.stream.Stream;
  * doesn't involve the overhead of manipulating the call stack. But in java the recursive version
  * can be optimized by the compiler to this version.
  *
- * <p>Worst-case performance O(log n) Best-case performance O(1) Average performance O(log n)
+ * <p>Worst-case performance O(zzzde.project.technic.log n) Best-case performance O(1) Average performance O(zzzde.project.technic.log n)
  * Worst-case space complexity O(1)
  *
  * @author Gabriele La Greca : https://github.com/thegabriele97

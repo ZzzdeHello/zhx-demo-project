@@ -1,7 +1,7 @@
 package JavaMaster.Maths;
 
 /**
- * This is Euclid's algorithm which is used to find the greatest common denominator Overide function
+ * This is Euclid's algorithm which is used to find the greatest common denominator Overide zzzde.code.technic.function
  * name gcd
  *
  * @author Oskar Enmalm 3/10/17
@@ -11,8 +11,8 @@ public class GCD {
   /**
    * get greatest common divisor
    *
-   * @param num1 the first number
-   * @param num2 the second number
+   * @param num1 the first zzzde.code.technic.number
+   * @param num2 the second zzzde.code.technic.number
    * @return gcd
    */
   public static int gcd(int num1, int num2) {
@@ -35,13 +35,13 @@ public class GCD {
   /**
    * get greatest common divisor in array
    *
-   * @param number contains number
+   * @param number contains zzzde.code.technic.number
    * @return gcd
    */
   public static int gcd(int[] number) {
     int result = number[0];
     for (int i = 1; i < number.length; i++)
-      // call gcd function (input two value)
+      // call gcd zzzde.code.technic.function (input two value)
       result = gcd(result, number[i]);
 
     return result;
@@ -50,7 +50,7 @@ public class GCD {
   public static void main(String[] args) {
     int[] myIntArray = {4, 16, 32};
 
-    // call gcd function (input array)
+    // call gcd zzzde.code.technic.function (input array)
     System.out.println(gcd(myIntArray)); // => 4
     System.out.printf("gcd(40,24)=%d gcd(24,40)=%d%n", gcd(40, 24), gcd(24, 40)); // => 8
   }

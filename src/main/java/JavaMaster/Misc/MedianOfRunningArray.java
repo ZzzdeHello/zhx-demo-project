@@ -33,7 +33,7 @@ public class MedianOfRunningArray {
 
   public static void main(String[] args) {
     /*
-        Testing the median function
+        Testing the median zzzde.code.technic.function
     */
 
     MedianOfRunningArray p = new MedianOfRunningArray();

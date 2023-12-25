@@ -24,10 +24,10 @@ public class OctalToDecimal {
   }
 
   /**
-   * This method converts an octal number to a decimal number.
+   * This method converts an octal zzzde.code.technic.number to a decimal zzzde.code.technic.number.
    *
-   * @param inputOctal The octal number
-   * @return The decimal number
+   * @param inputOctal The octal zzzde.code.technic.number
+   * @return The decimal zzzde.code.technic.number
    */
   public static int convertOctalToDecimal(String inputOctal) {
 
@@ -37,8 +37,8 @@ public class OctalToDecimal {
       return outputDecimal;
     } catch (NumberFormatException ne) {
       // Printing a warning message if the input is not a valid octal
-      // number:
-      System.out.println("Invalid Input, Expecting octal number 0-7");
+      // zzzde.code.technic.number:
+      System.out.println("Invalid Input, Expecting octal zzzde.code.technic.number 0-7");
       return -1;
     }
   }

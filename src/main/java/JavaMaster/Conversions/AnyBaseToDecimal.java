@@ -13,7 +13,7 @@ public class AnyBaseToDecimal {
   }
 
   /**
-   * Convert any radix to decimal number
+   * Convert any radix to decimal zzzde.code.technic.number
    *
    * @param s the string to be convert
    * @param radix the radix

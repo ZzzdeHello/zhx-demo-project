@@ -29,7 +29,7 @@ public class CircleLinkedList<E> {
     return size;
   }
 
-  // for the sake of simplistiy this class will only contain the append function or addLast other
+  // for the sake of simplistiy this class will only contain the append zzzde.code.technic.function or addLast other
   // add functions can be implemented however this is the basses of them all really.
   public void append(E value) {
     if (value == null) {

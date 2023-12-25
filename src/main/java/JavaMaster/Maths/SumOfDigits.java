@@ -12,10 +12,10 @@ public class SumOfDigits {
   }
 
   /**
-   * Calculate the sum of digits of a number
+   * Calculate the sum of digits of a zzzde.code.technic.number
    *
-   * @param number the number contains digits
-   * @return sum of digits of given {@code number}
+   * @param number the zzzde.code.technic.number contains digits
+   * @return sum of digits of given {@code zzzde.code.technic.number}
    */
   public static int sumOfDigits(int number) {
     number = number < 0 ? -number : number; /* calculate abs value */
@@ -28,10 +28,10 @@ public class SumOfDigits {
   }
 
   /**
-   * Calculate the sum of digits of a number using recursion
+   * Calculate the sum of digits of a zzzde.code.technic.number using recursion
    *
-   * @param number the number contains digits
-   * @return sum of digits of given {@code number}
+   * @param number the zzzde.code.technic.number contains digits
+   * @return sum of digits of given {@code zzzde.code.technic.number}
    */
   public static int sumOfDigitsRecursion(int number) {
     number = number < 0 ? -number : number; /* calculate abs value */
@@ -39,10 +39,10 @@ public class SumOfDigits {
   }
 
   /**
-   * Calculate the sum of digits of a number using char array
+   * Calculate the sum of digits of a zzzde.code.technic.number using char array
    *
-   * @param number the number contains digits
-   * @return sum of digits of given {@code number}
+   * @param number the zzzde.code.technic.number contains digits
+   * @return sum of digits of given {@code zzzde.code.technic.number}
    */
   public static int sumOfDigitsFast(int number) {
     number = number < 0 ? -number : number; /* calculate abs value */

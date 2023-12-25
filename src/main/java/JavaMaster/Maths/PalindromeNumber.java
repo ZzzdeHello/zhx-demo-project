@@ -9,10 +9,10 @@ public class PalindromeNumber {
   }
 
   /**
-   * Check if {@code n} is palindrome number or not
+   * Check if {@code n} is palindrome zzzde.code.technic.number or not
    *
-   * @param number the number
-   * @return {@code true} if {@code n} is palindrome number, otherwise {@code false}
+   * @param number the zzzde.code.technic.number
+   * @return {@code true} if {@code n} is palindrome zzzde.code.technic.number, otherwise {@code false}
    */
   public static boolean isPalindrome(int number) {
     if (number < 0) {

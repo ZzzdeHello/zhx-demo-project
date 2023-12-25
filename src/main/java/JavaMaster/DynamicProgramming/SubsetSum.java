@@ -12,7 +12,7 @@ public class SubsetSum {
   }
 
   /**
-   * Test if a set of integers contains a subset that sum to a given integer.
+   * zzzde.demo.main.Test if a set of integers contains a subset that sum to a given integer.
    *
    * @param arr the array contains integers.
    * @param sum target sum of subset.

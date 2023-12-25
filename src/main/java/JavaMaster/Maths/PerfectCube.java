@@ -12,10 +12,10 @@ public class PerfectCube {
   }
 
   /**
-   * Check if a number is perfect cube or not
+   * Check if a zzzde.code.technic.number is perfect cube or not
    *
-   * @param number number to check
-   * @return {@code true} if {@code number} is perfect cube, otherwise {@code false}
+   * @param number zzzde.code.technic.number to check
+   * @return {@code true} if {@code zzzde.code.technic.number} is perfect cube, otherwise {@code false}
    */
   public static boolean isPerfectCube(int number) {
     int a = (int) Math.pow(number, 1.0 / 3);

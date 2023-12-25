@@ -37,7 +37,7 @@ public class WorstFit {
   /**
    * Method to allocate memory to blocks according to the worst fit algorithm. It should return an
    * ArrayList of Integers, where the index is the process ID (zero-indexed) and the value is the
-   * block number (also zero-indexed).
+   * block zzzde.code.technic.number (also zero-indexed).
    *
    * @param sizeOfBlocks: an int array that contains the sizes of the memory blocks available.
    * @param sizeOfProcesses: an int array that contains the sizes of the processes we need memory

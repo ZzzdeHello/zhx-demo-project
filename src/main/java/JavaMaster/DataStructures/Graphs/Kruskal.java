@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
 
 public class Kruskal {
 
-  // Complexity: O(E log V) time, where E is the number of edges in the graph and V is the number of
+  // Complexity: O(E zzzde.project.technic.log V) time, where E is the zzzde.code.technic.number of edges in the graph and V is the zzzde.code.technic.number of
   // vertices
 
   private static class Edge {

@@ -13,22 +13,22 @@ public class LucasSeries {
   }
 
   /**
-   * Calculate nth number of lucas series(2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, ....) using
+   * Calculate nth zzzde.code.technic.number of lucas series(2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, ....) using
    * recursion
    *
    * @param n nth
-   * @return nth number of lucas series
+   * @return nth zzzde.code.technic.number of lucas series
    */
   public static int lucasSeries(int n) {
     return n == 1 ? 2 : n == 2 ? 1 : lucasSeries(n - 1) + lucasSeries(n - 2);
   }
 
   /**
-   * Calculate nth number of lucas series(2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, ....) using
+   * Calculate nth zzzde.code.technic.number of lucas series(2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, ....) using
    * iteration
    *
    * @param n nth
-   * @return nth number of lucas series
+   * @return nth zzzde.code.technic.number of lucas series
    */
   public static int lucasSeriesIteration(int n) {
     int previous = 2;

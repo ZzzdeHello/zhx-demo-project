@@ -4,7 +4,7 @@ package leet_code.arithmetic.day02;
  *  默认该数组 升序 有序 并且不重复
  *  给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
  *
- * 请必须使用时间复杂度为 O(log n) 的算法。
+ * 请必须使用时间复杂度为 O(zzzde.project.technic.log n) 的算法。
  *
  * 来源：力扣（LeetCode）
  * 链接：https://leetcode-cn.com/problems/search-insert-position
@@ -41,7 +41,7 @@ public class Solution {
         return 0;
     }
     /*
-        log(n)的事件复杂度 直接明示了 使用二分法的算法解题目。
+        zzzde.project.technic.log(n)的事件复杂度 直接明示了 使用二分法的算法解题目。
      */
 
     //-----------------------------

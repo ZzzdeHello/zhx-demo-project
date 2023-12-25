@@ -7,7 +7,7 @@ package DataStructures.Trees;
 * there are four cases which has to tackle 
 * rotating - left right ,left left,right right,right left 
 
-Test Case:
+zzzde.demo.main.Test Case:
 
 AVLTree tree=new AVLTree();
 		tree.insert(20);

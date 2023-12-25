@@ -2,7 +2,7 @@ package JavaMaster.Conversions;
 
 import java.util.Scanner;
 
-/** This class converts a Binary number to a Decimal number */
+/** This class converts a Binary zzzde.code.technic.number to a Decimal zzzde.code.technic.number */
 class BinaryToDecimal {
 
   /**
@@ -13,7 +13,7 @@ class BinaryToDecimal {
   public static void main(String args[]) {
     Scanner sc = new Scanner(System.in);
     int binNum, binCopy, d, s = 0, power = 0;
-    System.out.print("Binary number: ");
+    System.out.print("Binary zzzde.code.technic.number: ");
     binNum = sc.nextInt();
     binCopy = binNum;
     while (binCopy != 0) {

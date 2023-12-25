@@ -20,7 +20,7 @@ public class BSTIterative {
     root = null;
   }
 
-  /** main function for tests */
+  /** main zzzde.code.technic.function for tests */
   public static void main(String[] args) {
     BSTIterative tree = new BSTIterative();
     tree.add(3);

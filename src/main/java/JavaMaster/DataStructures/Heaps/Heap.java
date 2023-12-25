@@ -10,7 +10,7 @@ package JavaMaster.DataStructures.Heaps;
  * lower than or equal to its children's (the opposite rule applies to a max-heap).
  *
  * <p>All heap-related operations (inserting or deleting an element, extracting the min or max) are
- * performed in O(log n) time.
+ * performed in O(zzzde.project.technic.log n) time.
  *
  * @author Nicolas Renard
  */

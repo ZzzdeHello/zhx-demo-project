@@ -5,9 +5,9 @@ import java.util.Scanner;
 /**
  * @author Nishita Aggarwal
  *     <p>Brian Kernighan’s Algorithm
- *     <p>algorithm to count the number of set bits in a given number
- *     <p>Subtraction of 1 from a number toggles all the bits (from right to left) till the
- *     rightmost set bit(including the rightmost set bit). So if we subtract a number by 1 and do
+ *     <p>algorithm to count the zzzde.code.technic.number of set bits in a given zzzde.code.technic.number
+ *     <p>Subtraction of 1 from a zzzde.code.technic.number toggles all the bits (from right to left) till the
+ *     rightmost set bit(including the rightmost set bit). So if we subtract a zzzde.code.technic.number by 1 and do
  *     bitwise & with itself i.e. (n & (n-1)), we unset the rightmost set bit.
  *     <p>If we do n & (n-1) in a loop and count the no of times loop executes we get the set bit
  *     count.
@@ -17,7 +17,7 @@ import java.util.Scanner;
 public class BrianKernighanAlgorithm {
 
   /**
-   * @param num: number in which we count the set bits
+   * @param num: zzzde.code.technic.number in which we count the set bits
    * @return int: Number of set bits
    */
   static int countSetBits(int num) {

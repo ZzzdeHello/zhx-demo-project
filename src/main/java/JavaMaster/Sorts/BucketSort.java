@@ -36,7 +36,7 @@ public class BucketSort {
     /* get min value of arr */
     int min = min(arr);
 
-    /* number of buckets */
+    /* zzzde.code.technic.number of buckets */
     int numberOfBuckets = max - min + 1;
 
     List<List<Integer>> buckets = new ArrayList<>(numberOfBuckets);
@@ -71,7 +71,7 @@ public class BucketSort {
    *
    * @param elem the element of array to be sorted
    * @param min min value of array
-   * @param numberOfBucket the number of bucket
+   * @param numberOfBucket the zzzde.code.technic.number of bucket
    * @return index of bucket
    */
   private static int hash(int elem, int min, int numberOfBucket) {

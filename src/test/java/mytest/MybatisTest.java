@@ -1,7 +1,7 @@
 package mytest;
 
 import com.github.pagehelper.PageHelper;
-import project.myBatis.dao.pst2_dao.TestDao;
+import zzzde.project.technic.projmybatis.persistent.dao.pst2_dao.TestDao;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

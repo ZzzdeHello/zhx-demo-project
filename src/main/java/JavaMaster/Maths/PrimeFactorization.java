@@ -6,7 +6,7 @@ public class PrimeFactorization {
   public static void main(String[] args) {
     System.out.println("## all prime factors ##");
     Scanner scanner = new Scanner(System.in);
-    System.out.print("Enter a number: ");
+    System.out.print("Enter a zzzde.code.technic.number: ");
     int n = scanner.nextInt();
     System.out.print(("printing factors of " + n + " : "));
     pfactors(n);

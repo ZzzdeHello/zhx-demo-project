@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class OctalToHexadecimal {
 
   /**
-   * This method converts a Octal number to a decimal number
+   * This method converts a Octal zzzde.code.technic.number to a decimal zzzde.code.technic.number
    *
    * @param s The Octal Number
-   * @return The Decimal number
+   * @return The Decimal zzzde.code.technic.number
    */
   public static int octToDec(String s) {
     int i = 0;
@@ -27,10 +27,10 @@ public class OctalToHexadecimal {
   }
 
   /**
-   * This method converts a Decimal number to a Hexadecimal number
+   * This method converts a Decimal zzzde.code.technic.number to a Hexadecimal zzzde.code.technic.number
    *
    * @param d The Decimal Number
-   * @return The Hexadecimal number
+   * @return The Hexadecimal zzzde.code.technic.number
    */
   public static String decimalToHex(int d) {
     String digits = "0123456789ABCDEF";
@@ -47,14 +47,14 @@ public class OctalToHexadecimal {
   public static void main(String args[]) {
 
     Scanner input = new Scanner(System.in);
-    System.out.print("Enter the Octal number: ");
-    // Take octal number as input from user in a string
+    System.out.print("Enter the Octal zzzde.code.technic.number: ");
+    // Take octal zzzde.code.technic.number as input from user in a string
     String oct = input.next();
 
-    // Pass the octal number to function and get converted deciaml form
+    // Pass the octal zzzde.code.technic.number to zzzde.code.technic.function and get converted deciaml form
     int decimal = octToDec(oct);
 
-    // Pass the decimla number to function and get converted Hex form of the number
+    // Pass the decimla zzzde.code.technic.number to zzzde.code.technic.function and get converted Hex form of the zzzde.code.technic.number
     String hex = decimalToHex(decimal);
     System.out.println("The Hexadecimal equivalant is: " + hex);
     input.close();

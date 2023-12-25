@@ -8,7 +8,7 @@ public class RootPrecision {
     // take input
     Scanner scn = new Scanner(System.in);
 
-    // N is the input number
+    // N is the input zzzde.code.technic.number
     int N = scn.nextInt();
 
     // P is precision value for eg - P is 3 in 2.564 and 5 in 3.80870.

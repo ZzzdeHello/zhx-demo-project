@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * To find triplet equals to given sum in complexity O(n*log(n))
+ * To find triplet equals to given sum in complexity O(n*zzzde.project.technic.log(n))
  *
  * <p>Array must be sorted
  *
  * @author Ujjawal Joshi
  * @date 2020.05.18
- *     <p>Test Cases: Input: 6 //Length of array 12 3 4 1 6 9 target=24 Output:3 9 12 Explanation:
+ *     <p>zzzde.demo.main.Test Cases: Input: 6 //Length of array 12 3 4 1 6 9 target=24 Output:3 9 12 Explanation:
  *     There is a triplet (12, 3 and 9) present in the array whose sum is 24.
  */
 class ThreeSum {

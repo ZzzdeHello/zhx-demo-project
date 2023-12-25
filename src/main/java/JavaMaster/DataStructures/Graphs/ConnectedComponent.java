@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * A class that counts the number of different connected components in a graph
+ * A class that counts the zzzde.code.technic.number of different connected components in a graph
  *
  * @author Lukas Keul, Florian Mercks
  */

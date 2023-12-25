@@ -21,7 +21,7 @@ public class Knapsack {
     return rv[n][W];
   }
 
-  // Driver program to test above function
+  // Driver program to test above zzzde.code.technic.function
   public static void main(String args[]) {
     int val[] = new int[] {50, 100, 130};
     int wt[] = new int[] {10, 20, 40};

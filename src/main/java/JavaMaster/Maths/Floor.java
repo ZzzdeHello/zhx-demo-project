@@ -14,8 +14,8 @@ public class Floor {
   /**
    * Returns the largest (closest to positive infinity)
    *
-   * @param number the number
-   * @return the largest (closest to positive infinity) of given {@code number}
+   * @param number the zzzde.code.technic.number
+   * @return the largest (closest to positive infinity) of given {@code zzzde.code.technic.number}
    */
   public static double floor(double number) {
     if (number - (int) number == 0) {

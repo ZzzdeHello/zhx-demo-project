@@ -70,7 +70,7 @@
 
     <!-- 配置可以整体扫描Mapper的一个扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="project.myBatis.dao.pst2_dao"></property>
+        <property name="basePackage" value="zzzde.project.technic.projmybatis.persistent.dao.pst2_dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory_pst2"></property>
     </bean>
     <!--pst-->
@@ -102,13 +102,13 @@
     </bean>
     <!-- 配置可以整体扫描Mapper的一个扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="project.myBatis.dao.pst_dao"></property>
+        <property name="basePackage" value="zzzde.project.technic.projmybatis.persistent.dao.pst_dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
     <!-- 配置可以整体扫描Mapper的一个扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="project.myBatis.dao.pst2_dao"></property>
+        <property name="basePackage" value="zzzde.project.technic.projmybatis.persistent.dao.pst2_dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory_pst2"></property>
     </bean>
 

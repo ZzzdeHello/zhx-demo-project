@@ -11,10 +11,10 @@ public class PerfectSquare {
   }
 
   /**
-   * Check if a number is perfect square number
+   * Check if a zzzde.code.technic.number is perfect square zzzde.code.technic.number
    *
-   * @param number the number to be checked
-   * @return <tt>true</tt> if {@code number} is perfect square, otherwise <tt>false</tt>
+   * @param number the zzzde.code.technic.number to be checked
+   * @return <tt>true</tt> if {@code zzzde.code.technic.number} is perfect square, otherwise <tt>false</tt>
    */
   public static boolean isPerfectSquare(int number) {
     int sqrt = (int) Math.sqrt(number);

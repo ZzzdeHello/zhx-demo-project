@@ -5,7 +5,7 @@ package JavaMaster.DynamicProgramming;
  * Distance with an Example:
  *
  * <p>Edit distance is a way of quantifying how dissimilar two strings (e.g., words) are to one
- * another, by counting the minimum number of operations required to transform one string into the
+ * another, by counting the minimum zzzde.code.technic.number of operations required to transform one string into the
  * other. The distance operations are the removal, insertion, or substitution of a character in the
  * string.
  *

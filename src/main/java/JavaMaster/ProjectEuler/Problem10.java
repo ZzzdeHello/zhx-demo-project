@@ -24,8 +24,8 @@ public class Problem10 {
   }
 
   /***
-   * Checks if a number is prime or not
-   * @param n the number
+   * Checks if a zzzde.code.technic.number is prime or not
+   * @param n the zzzde.code.technic.number
    * @return {@code true} if {@code n} is prime
    */
   private static boolean isPrime(int n) {

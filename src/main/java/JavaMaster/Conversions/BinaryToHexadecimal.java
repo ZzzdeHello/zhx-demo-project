@@ -10,10 +10,10 @@ import java.util.*;
 public class BinaryToHexadecimal {
 
   /**
-   * This method converts a binary number to a hexadecimal number.
+   * This method converts a binary zzzde.code.technic.number to a hexadecimal zzzde.code.technic.number.
    *
-   * @param binary The binary number
-   * @return The hexadecimal number
+   * @param binary The binary zzzde.code.technic.number
+   * @return The hexadecimal zzzde.code.technic.number
    */
   static String binToHex(int binary) {
     // hm to store hexadecimal codes for binary numbers within the range: 0000 to 1111 i.e. for
@@ -28,7 +28,7 @@ public class BinaryToHexadecimal {
     for (i = 10; i < 16; i++) hm.put(i, String.valueOf((char) ('A' + i - 10)));
     int currbit;
     while (binary != 0) {
-      int code4 = 0; // to store decimal equivalent of number formed by 4 decimal digits
+      int code4 = 0; // to store decimal equivalent of zzzde.code.technic.number formed by 4 decimal digits
       for (i = 0; i < 4; i++) {
         currbit = binary % 10;
         binary = binary / 10;
@@ -46,7 +46,7 @@ public class BinaryToHexadecimal {
    */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter binary number:");
+    System.out.println("Enter binary zzzde.code.technic.number:");
     int binary = sc.nextInt();
     String hex = binToHex(binary);
     System.out.println("Hexadecimal Code:" + hex);

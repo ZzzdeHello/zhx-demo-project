@@ -3,16 +3,16 @@ package JavaMaster.ProjectEuler;
 /**
  * The prime factors of 13195 are 5, 7, 13 and 29.
  *
- * <p>What is the largest prime factor of the number 600851475143 ?
+ * <p>What is the largest prime factor of the zzzde.code.technic.number 600851475143 ?
  *
  * <p>Link: https://projecteuler.net/problem=3
  */
 public class Problem03 {
 
   /**
-   * Checks if a number is prime or not
+   * Checks if a zzzde.code.technic.number is prime or not
    *
-   * @param n the number
+   * @param n the zzzde.code.technic.number
    * @return {@code true} if {@code n} is prime
    */
   public static boolean isPrime(int n) {
@@ -31,10 +31,10 @@ public class Problem03 {
   }
 
   /**
-   * Calculate all the prime factors of a number and return the largest
+   * Calculate all the prime factors of a zzzde.code.technic.number and return the largest
    *
-   * @param n integer number
-   * @return the maximum prime factor of the given number
+   * @param n integer zzzde.code.technic.number
+   * @return the maximum prime factor of the given zzzde.code.technic.number
    */
   static long maxPrimeFactor(long n) {
     for (int i = 2; i < n / 2; i++) {

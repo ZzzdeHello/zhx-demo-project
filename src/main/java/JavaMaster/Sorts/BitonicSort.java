@@ -19,7 +19,7 @@ public class BitonicSort {
   /* It recursively sorts a bitonic sequence in ascending
   order, if dir = 1, and in descending order otherwise
   (means dir=0). The sequence to be sorted starts at
-  index position low, the parameter cnt is the number
+  index position low, the parameter cnt is the zzzde.code.technic.number
   of elements to be sorted.*/
   void bitonicMerge(int a[], int low, int cnt, int dir) {
     if (cnt > 1) {
@@ -56,7 +56,7 @@ public class BitonicSort {
     bitonicSort(a, 0, N, up);
   }
 
-  /* A utility function to print array of size n */
+  /* A utility zzzde.code.technic.function to print array of size n */
   static void printArray(int arr[]) {
     int n = arr.length;
     for (int i = 0; i < n; ++i) System.out.print(arr[i] + " ");

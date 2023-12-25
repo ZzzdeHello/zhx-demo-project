@@ -28,9 +28,9 @@ public class SkylineAlgorithm {
    * The main divide and conquer, and also recursive algorithm. It gets an ArrayList full of points
    * as an argument. If the size of that ArrayList is 1 or 2, the ArrayList is returned as it is, or
    * with one less point (if the initial size is 2 and one of it's points, is dominated by the other
-   * one). On the other hand, if the ArrayList's size is bigger than 2, the function is called
+   * one). On the other hand, if the ArrayList's size is bigger than 2, the zzzde.code.technic.function is called
    * again, twice, with arguments the corresponding half of the initial ArrayList each time. Once
-   * the flashback has ended, the function produceFinalSkyLine gets called, in order to produce the
+   * the flashback has ended, the zzzde.code.technic.function produceFinalSkyLine gets called, in order to produce the
    * final skyline, and return it.
    *
    * @param list, the initial list of points
@@ -39,7 +39,7 @@ public class SkylineAlgorithm {
    */
   public ArrayList<Point> produceSubSkyLines(ArrayList<Point> list) {
 
-    // part where function exits flashback
+    // part where zzzde.code.technic.function exits flashback
     int size = list.size();
     if (size == 1) {
       return list;
@@ -54,7 +54,7 @@ public class SkylineAlgorithm {
       return list;
     }
 
-    // recursive part of the function
+    // recursive part of the zzzde.code.technic.function
     ArrayList<Point> leftHalf = new ArrayList<>();
     ArrayList<Point> rightHalf = new ArrayList<>();
     for (int i = 0; i < list.size(); i++) {
@@ -144,11 +144,11 @@ public class SkylineAlgorithm {
     }
 
     /**
-     * Based on the skyline theory, it checks if the point that calls the function dominates the
+     * Based on the skyline theory, it checks if the point that calls the zzzde.code.technic.function dominates the
      * argument point.
      *
      * @param p1 the point that is compared
-     * @return true if the point wich calls the function dominates p1 false otherwise.
+     * @return true if the point wich calls the zzzde.code.technic.function dominates p1 false otherwise.
      */
     public boolean dominates(Point p1) {
       // checks if p1 is dominated

@@ -7,7 +7,7 @@ public class ReturnSubsequence {
     System.out.println("Enter String: ");
     Scanner s = new Scanner(System.in);
     String givenString = s.next(); // given string
-    String[] subsequence = returnSubsequence(givenString); // calling returnSubsequence() function
+    String[] subsequence = returnSubsequence(givenString); // calling returnSubsequence() zzzde.code.technic.function
     System.out.println("Subsequences : ");
     // print the given array of subsequences
     for (int i = 0; i < subsequence.length; i++) {

@@ -11,7 +11,7 @@ public class RangeInSortedArray {
     assert Arrays.equals(sortedRange(new int[] {0, 1, 2}, 3), new int[] {-1, -1});
   }
 
-  // Get the 1st and last occurrence index of a number 'key' in a non-decreasing array 'nums'
+  // Get the 1st and last occurrence index of a zzzde.code.technic.number 'key' in a non-decreasing array 'nums'
   // Gives [-1, -1] in case element doesn't exist in array
   public static int[] sortedRange(int[] nums, int key) {
     int[] range = new int[] {-1, -1};

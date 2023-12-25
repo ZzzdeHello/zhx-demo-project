@@ -14,7 +14,7 @@ public class DecimalToOctal {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n, k, d, s = 0, c = 0;
-    System.out.print("Decimal number: ");
+    System.out.print("Decimal zzzde.code.technic.number: ");
     n = sc.nextInt();
     k = n;
     while (k != 0) {

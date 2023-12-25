@@ -19,7 +19,7 @@ public class LowestBasePalindrome {
     int n = 0;
     while (true) {
       try {
-        System.out.print("Enter number: ");
+        System.out.print("Enter zzzde.code.technic.number: ");
         n = in.nextInt();
         break;
       } catch (InputMismatchException e) {
@@ -33,10 +33,10 @@ public class LowestBasePalindrome {
   }
 
   /**
-   * Given a number in base 10, returns the lowest base in which the number is represented by a
+   * Given a zzzde.code.technic.number in base 10, returns the lowest base in which the zzzde.code.technic.number is represented by a
    * palindrome (read the same left-to-right and right-to-left).
    *
-   * @param num A number in base 10.
+   * @param num A zzzde.code.technic.number in base 10.
    * @return The lowest base in which num is a palindrome.
    */
   public static int lowestBasePalindrome(int num) {
@@ -56,7 +56,7 @@ public class LowestBasePalindrome {
           // which is equivalent to the integer remainder of (n/base).
           // The next digit is obtained by dividing n by the base and
           // continuing the process of getting the remainder. This is done
-          // until n is <=0 and the number in the new base is obtained.
+          // until n is <=0 and the zzzde.code.technic.number in the new base is obtained.
           digit = (num % base);
           num /= base;
           // If the digit isn't in the set of [0-9][A-Z] (beyond base 36), its character
@@ -77,9 +77,9 @@ public class LowestBasePalindrome {
         }
         // Num is assigned back its original value for the next iteration.
         num = num2;
-        // Auxiliary method reverses the number.
+        // Auxiliary method reverses the zzzde.code.technic.number.
         String reverse = reverse(newNum);
-        // If the number is read the same as its reverse, then it is a palindrome.
+        // If the zzzde.code.technic.number is read the same as its reverse, then it is a palindrome.
         // The current base is returned.
         if (reverse.equals(newNum)) {
           foundBase = true;
@@ -110,7 +110,7 @@ public class LowestBasePalindrome {
     for (int i = 0; i < n.length(); i++) {
       // store the character in charB1
       charB1 = n.charAt(i);
-      // if it is a non-number, convert it to a decimal value >9 and store it in charB2
+      // if it is a non-zzzde.code.technic.number, convert it to a decimal value >9 and store it in charB2
       if (charB1 >= 'A' && charB1 <= 'Z') charB2 = 10 + (charB1 - 'A');
       // Else, store the integer value in charB2
       else charB2 = charB1 - '0';
@@ -120,19 +120,19 @@ public class LowestBasePalindrome {
     }
 
     // Converting the decimal value to base b2:
-    // A number is converted from decimal to another base
+    // A zzzde.code.technic.number is converted from decimal to another base
     // by continuously dividing by the base and recording
-    // the remainder until the quotient is zero. The number in the
+    // the remainder until the quotient is zero. The zzzde.code.technic.number in the
     // new base is the remainders, with the last remainder
     // being the left-most digit.
 
     // While the quotient is NOT zero:
     while (decimalValue != 0) {
       // If the remainder is a digit < 10, simply add it to
-      // the left side of the new number.
+      // the left side of the new zzzde.code.technic.number.
       if (decimalValue % b2 < 10) output = Integer.toString(decimalValue % b2) + output;
       // If the remainder is >= 10, add a character with the
-      // corresponding value to the new number. (A = 10, B = 11, C = 12, ...)
+      // corresponding value to the new zzzde.code.technic.number. (A = 10, B = 11, C = 12, ...)
       else output = (char) ((decimalValue % b2) + 55) + output;
       // Divide by the new base again
       decimalValue /= b2;

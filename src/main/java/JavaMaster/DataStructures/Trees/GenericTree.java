@@ -8,8 +8,8 @@ import java.util.Scanner;
  * A generic tree is a tree which can have as many children as it can be It might be possible that
  * every node present is directly connected to root node.
  *
- * <p>In this code Every function has two copies: one function is helper function which can be
- * called from main and from that function a private function is called which will do the actual
+ * <p>In this code Every zzzde.code.technic.function has two copies: one zzzde.code.technic.function is helper zzzde.code.technic.function which can be
+ * called from main and from that zzzde.code.technic.function a private zzzde.code.technic.function is called which will do the actual
  * work. I have done this, while calling from main one have to give minimum parameters.
  */
 public class GenericTree {
@@ -36,7 +36,7 @@ public class GenericTree {
     // input
     node = new Node();
     node.data = scn.nextInt();
-    System.out.println("number of children");
+    System.out.println("zzzde.code.technic.number of children");
     int number = scn.nextInt();
     for (int i = 0; i < number; i++) {
       Node child = create_treeG(node, i, scn);
@@ -47,7 +47,7 @@ public class GenericTree {
   }
 
   /** Function to display the generic tree */
-  public void display() { // Helper function
+  public void display() { // Helper zzzde.code.technic.function
     display_1(root);
   }
 
@@ -63,7 +63,7 @@ public class GenericTree {
   }
 
   /**
-   * One call store the size directly but if you are asked compute size this function to calculate
+   * One call store the size directly but if you are asked compute size this zzzde.code.technic.function to calculate
    * size goes as follows
    *
    * @return size
@@ -118,9 +118,9 @@ public class GenericTree {
   }
 
   /**
-   * Function to find whether a number is present in the generic tree or not
+   * Function to find whether a zzzde.code.technic.number is present in the generic tree or not
    *
-   * @param info number
+   * @param info zzzde.code.technic.number
    * @return present or not
    */
   public boolean findcall(int info) {

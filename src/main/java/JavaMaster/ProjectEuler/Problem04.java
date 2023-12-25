@@ -1,7 +1,7 @@
 package JavaMaster.ProjectEuler;
 
 /**
- * A palindromic number reads the same both ways. The largest palindrome made from the product of
+ * A palindromic zzzde.code.technic.number reads the same both ways. The largest palindrome made from the product of
  * two 2-digit numbers is 9009 = 91 × 99.
  *
  * <p>Find the largest palindrome made from the product of two 3-digit numbers.
@@ -27,7 +27,7 @@ public class Problem04 {
     for (int i = n - 1; i >= 10000; --i) {
       String strNumber = String.valueOf(i);
 
-      /* Test if strNumber is palindrome */
+      /* zzzde.demo.main.Test if strNumber is palindrome */
       if (new StringBuilder(strNumber).reverse().toString().equals(strNumber)) {
         for (int divisor = 999; divisor >= 100; --divisor) {
           if (i % divisor == 0 && String.valueOf(i / divisor).length() == 3) {

@@ -1,6 +1,6 @@
 package JavaMaster.Others;
 
-/** Implementation of Knuth–Morris–Pratt algorithm Usage: see the main function for an example */
+/** Implementation of Knuth–Morris–Pratt algorithm Usage: see the main zzzde.code.technic.function for an example */
 public class KMP {
   // a working example
   public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class KMP {
     }
   }
 
-  // return the prefix function
+  // return the prefix zzzde.code.technic.function
   private static int[] computePrefixFunction(final String P) {
     final int n = P.length();
     final int[] pi = new int[n];

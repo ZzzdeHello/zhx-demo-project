@@ -20,7 +20,7 @@ public class RodCutting {
     return val[n];
   }
 
-  // main function to test
+  // main zzzde.code.technic.function to test
   public static void main(String args[]) {
     int[] arr = new int[] {2, 5, 13, 19, 20};
     int size = arr.length;

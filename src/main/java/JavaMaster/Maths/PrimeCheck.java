@@ -6,19 +6,19 @@ public class PrimeCheck {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.print("Enter a number: ");
+    System.out.print("Enter a zzzde.code.technic.number: ");
     int n = scanner.nextInt();
     if (isPrime(n)) {
-      System.out.println(n + " is a prime number");
+      System.out.println(n + " is a prime zzzde.code.technic.number");
     } else {
-      System.out.println(n + " is not a prime number");
+      System.out.println(n + " is not a prime zzzde.code.technic.number");
     }
     scanner.close();
   }
 
   /***
-   * Checks if a number is prime or not
-   * @param n the number
+   * Checks if a zzzde.code.technic.number is prime or not
+   * @param n the zzzde.code.technic.number
    * @return {@code true} if {@code n} is prime
    */
   public static boolean isPrime(int n) {

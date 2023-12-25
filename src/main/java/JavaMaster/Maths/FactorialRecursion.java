@@ -14,12 +14,12 @@ public class FactorialRecursion {
   /**
    * Recursive FactorialRecursion Method
    *
-   * @param n The number to factorial
-   * @return The factorial of the number
+   * @param n The zzzde.code.technic.number to factorial
+   * @return The factorial of the zzzde.code.technic.number
    */
   public static long factorial(int n) {
     if (n < 0) {
-      throw new IllegalArgumentException("number is negative");
+      throw new IllegalArgumentException("zzzde.code.technic.number is negative");
     }
     return n == 0 || n == 1 ? 1 : n * factorial(n - 1);
   }

@@ -14,8 +14,8 @@ public class Ceil {
   /**
    * Returns the smallest (closest to negative infinity)
    *
-   * @param number the number
-   * @return the smallest (closest to negative infinity) of given {@code number}
+   * @param number the zzzde.code.technic.number
+   * @return the smallest (closest to negative infinity) of given {@code zzzde.code.technic.number}
    */
   public static double ceil(double number) {
     if (number - (int) number == 0) {

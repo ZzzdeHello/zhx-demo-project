@@ -2,12 +2,12 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="project.myBatis.dao.pst_dao.ChOperationMonthDao">
+<mapper namespace="zzzde.project.technic.projmybatis.persistent.dao.pst_dao.ChOperationMonthDao">
     <select id="selectOneItem" resultType="java.util.Map">
         select c.OPERATORS_NBR,c.month from ch_operators_info_month as c where id = 7
     </select>
 
-    <resultMap id="RM_ChOperatorsInfoMonthDo" type="project.myBatis.model.ChOperatorsInfoMonthDo">
+    <resultMap id="RM_ChOperatorsInfoMonthDo" type="zzzde.project.technic.projmybatis.persistent.entity.ChOperatorsInfoMonthDo">
             <id column="ID" property="id"/>
             <result column="MONTH" property="month"/>
             <result column="OPERATORS_NBR" property="operatorsNbr"/>

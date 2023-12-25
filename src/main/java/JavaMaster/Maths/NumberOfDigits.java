@@ -1,6 +1,6 @@
 package JavaMaster.Maths;
 
-/** Find the number of digits in a number. */
+/** Find the zzzde.code.technic.number of digits in a zzzde.code.technic.number. */
 public class NumberOfDigits {
   public static void main(String[] args) {
     int[] numbers = {0, 12, 123, 1234, -12345, 123456, 1234567, 12345678, 123456789};
@@ -13,10 +13,10 @@ public class NumberOfDigits {
   }
 
   /**
-   * Find the number of digits in a number.
+   * Find the zzzde.code.technic.number of digits in a zzzde.code.technic.number.
    *
-   * @param number number to find
-   * @return number of digits of given number
+   * @param number zzzde.code.technic.number to find
+   * @return zzzde.code.technic.number of digits of given zzzde.code.technic.number
    */
   private static int numberOfDigits(int number) {
     int digits = 0;
@@ -28,30 +28,30 @@ public class NumberOfDigits {
   }
 
   /**
-   * Find the number of digits in a number fast version.
+   * Find the zzzde.code.technic.number of digits in a zzzde.code.technic.number fast version.
    *
-   * @param number number to find
-   * @return number of digits of given number
+   * @param number zzzde.code.technic.number to find
+   * @return zzzde.code.technic.number of digits of given zzzde.code.technic.number
    */
   private static int numberOfDigitsFast(int number) {
     return number == 0 ? 1 : (int) Math.floor(Math.log10(Math.abs(number)) + 1);
   }
 
   /**
-   * Find the number of digits in a number faster version.
+   * Find the zzzde.code.technic.number of digits in a zzzde.code.technic.number faster version.
    *
-   * @param number number to find
-   * @return number of digits of given number
+   * @param number zzzde.code.technic.number to find
+   * @return zzzde.code.technic.number of digits of given zzzde.code.technic.number
    */
   private static int numberOfDigitsFaster(int number) {
     return number < 0 ? (-number + "").length() : (number + "").length();
   }
 
   /**
-   * Find the number of digits in a number using recursion.
+   * Find the zzzde.code.technic.number of digits in a zzzde.code.technic.number using recursion.
    *
-   * @param number number to find
-   * @return number of digits of given number
+   * @param number zzzde.code.technic.number to find
+   * @return zzzde.code.technic.number of digits of given zzzde.code.technic.number
    */
   private static int numberOfDigitsRecursion(int number) {
     return number / 10 == 0 ? 1 : 1 + numberOfDigitsRecursion(number / 10);

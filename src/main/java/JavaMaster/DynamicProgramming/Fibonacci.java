@@ -22,10 +22,10 @@ public class Fibonacci {
   }
 
   /**
-   * This method finds the nth fibonacci number using memoization technique
+   * This method finds the nth fibonacci zzzde.code.technic.number using memoization technique
    *
-   * @param n The input n for which we have to determine the fibonacci number Outputs the nth
-   *     fibonacci number
+   * @param n The input n for which we have to determine the fibonacci zzzde.code.technic.number Outputs the nth
+   *     fibonacci zzzde.code.technic.number
    */
   public static int fibMemo(int n) {
     if (map.containsKey(n)) {
@@ -44,10 +44,10 @@ public class Fibonacci {
   }
 
   /**
-   * This method finds the nth fibonacci number using bottom up
+   * This method finds the nth fibonacci zzzde.code.technic.number using bottom up
    *
-   * @param n The input n for which we have to determine the fibonacci number Outputs the nth
-   *     fibonacci number
+   * @param n The input n for which we have to determine the fibonacci zzzde.code.technic.number Outputs the nth
+   *     fibonacci zzzde.code.technic.number
    */
   public static int fibBotUp(int n) {
 
@@ -67,10 +67,10 @@ public class Fibonacci {
   }
 
   /**
-   * This method finds the nth fibonacci number using bottom up
+   * This method finds the nth fibonacci zzzde.code.technic.number using bottom up
    *
-   * @param n The input n for which we have to determine the fibonacci number Outputs the nth
-   *     fibonacci number
+   * @param n The input n for which we have to determine the fibonacci zzzde.code.technic.number Outputs the nth
+   *     fibonacci zzzde.code.technic.number
    *     <p>This is optimized version of Fibonacci Program. Without using Hashmap and recursion. It
    *     saves both memory and time. Space Complexity will be O(1) Time Complexity will be O(n)
    *     <p>Whereas , the above functions will take O(n) Space.

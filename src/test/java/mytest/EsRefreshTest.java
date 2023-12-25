@@ -1,6 +1,5 @@
 package mytest;
 
-import mytest.Conf;
 import org.apache.commons.lang3.StringUtils;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -14,8 +13,6 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Conf.class)
@@ -56,19 +53,19 @@ public class EsRefreshTest {
             }
             if( listFile.length > 0 ) {
                 for (File file : listFile) {
-                    System.out.println(file.getName() + "file.start...");
+                    System.out.println(file.getName() + "zzzde.project.technic.file.start...");
                     parseFile(file);
-                    System.out.println(file.getName() + "file.end...");
+                    System.out.println(file.getName() + "zzzde.project.technic.file.end...");
                 }
             }
 //            if( listFile.length > 0 ){
 //                ExecutorService fixedThreadPool = Executors.newFixedThreadPool(1);//按文件开始解析文件池
-//                for( File file : listFile ){
+//                for( File zzzde.project.technic.file : listFile ){
 //                    fixedThreadPool.execute(()->{
 //                        //在本地服务器 按批次单线程解析文件
-//                        System.out.println(file.getName() +"file.start...");
-//                        parseFile(file);
-//                        System.out.println(file.getName() +"file.end...");
+//                        System.out.println(zzzde.project.technic.file.getName() +"zzzde.project.technic.file.start...");
+//                        parseFile(zzzde.project.technic.file);
+//                        System.out.println(zzzde.project.technic.file.getName() +"zzzde.project.technic.file.end...");
 //                    });
 //                }
 //                fixedThreadPool.shutdown();

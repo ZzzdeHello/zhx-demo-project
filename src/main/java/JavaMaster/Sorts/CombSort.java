@@ -5,7 +5,7 @@ import static JavaMaster.Sorts.SortUtils.*;
 /**
  * Comb Sort algorithm implementation
  *
- * <p>Best-case performance O(n * log(n)) Worst-case performance O(n ^ 2) Worst-case space
+ * <p>Best-case performance O(n * zzzde.project.technic.log(n)) Worst-case performance O(n ^ 2) Worst-case space
  * complexity O(1)
  *
  * <p>Comb sort improves on bubble sort.

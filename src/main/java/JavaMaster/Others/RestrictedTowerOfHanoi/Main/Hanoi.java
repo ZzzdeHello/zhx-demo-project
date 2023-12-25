@@ -210,7 +210,7 @@ public class Hanoi extends JFrame {
     }*/
   }
 
-  // Recursive function to formulate restricted tower of hanoi.
+  // Recursive zzzde.code.technic.function to formulate restricted tower of hanoi.
   public void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod) {
     if (n == 1) {
       stringBuilder.setLength(0);

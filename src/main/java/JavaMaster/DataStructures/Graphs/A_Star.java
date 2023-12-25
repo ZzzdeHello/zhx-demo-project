@@ -1,5 +1,5 @@
 /*
-	Time Complexity = O(E), where E is equal to the number of edges
+	Time Complexity = O(E), where E is equal to the zzzde.code.technic.number of edges
 */
 
 package JavaMaster.DataStructures.Graphs;
@@ -122,7 +122,7 @@ public class A_Star {
   }
 
   public static void main(String[] args) {
-    // heuristic function optimistic values
+    // heuristic zzzde.code.technic.function optimistic values
     int[] heuristic = {
       366, 0, 160, 242, 161, 178, 77, 151, 226, 244, 241, 234, 380, 98, 193, 253, 329, 80, 199, 374
     };
@@ -145,7 +145,7 @@ public class A_Star {
   public static PathAndDistance aStar(int from, int to, Graph graph, int[] heuristic) {
     // nodes are prioritised by the less value of the current distance of their paths, and the
     // estimated value
-    // given by the heuristic function to reach the destination point from the current point.
+    // given by the heuristic zzzde.code.technic.function to reach the destination point from the current point.
     PriorityQueue<PathAndDistance> queue =
         new PriorityQueue<>(Comparator.comparingInt(a -> (a.getDistance() + a.getEstimated())));
 
@@ -164,7 +164,7 @@ public class A_Star {
           if (!currentData.getPath().contains(edge.getTo())) { // Avoid Cycles
             ArrayList<Integer> updatedPath = new ArrayList<>(currentData.getPath());
             updatedPath.add(edge.getTo()); // Add the new node to the path, update the distance,
-            // and the heuristic function value associated to that path.
+            // and the heuristic zzzde.code.technic.function value associated to that path.
             queue.add(
                 new PathAndDistance(
                     currentData.getDistance() + edge.getWeight(),

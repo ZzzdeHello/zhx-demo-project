@@ -15,7 +15,7 @@ public class Median {
   /**
    * Calculate average median
    *
-   * @param values number series
+   * @param values zzzde.code.technic.number series
    * @return median of given {@code values}
    */
   public static double median(int[] values) {

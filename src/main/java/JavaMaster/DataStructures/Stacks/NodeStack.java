@@ -111,7 +111,7 @@ public class NodeStack<Item> {
   /**
    * Returns the size of the stack.
    *
-   * @return int : number of values in the stack.
+   * @return int : zzzde.code.technic.number of values in the stack.
    */
   public int size() {
     return NodeStack.getSize();

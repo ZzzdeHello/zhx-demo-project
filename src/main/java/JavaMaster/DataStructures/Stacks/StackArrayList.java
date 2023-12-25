@@ -74,7 +74,7 @@ public class StackArrayList {
   }
 
   /**
-   * Test if the stack is empty.
+   * zzzde.demo.main.Test if the stack is empty.
    *
    * @return {@code true} if this stack is empty, {@code false} otherwise.
    */

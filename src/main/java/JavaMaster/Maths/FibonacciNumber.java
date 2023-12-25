@@ -11,10 +11,10 @@ public class FibonacciNumber {
   }
 
   /**
-   * Check if a number is perfect square number
+   * Check if a zzzde.code.technic.number is perfect square zzzde.code.technic.number
    *
-   * @param number the number to be checked
-   * @return <tt>true</tt> if {@code number} is perfect square, otherwise <tt>false</tt>
+   * @param number the zzzde.code.technic.number to be checked
+   * @return <tt>true</tt> if {@code zzzde.code.technic.number} is perfect square, otherwise <tt>false</tt>
    */
   public static boolean isPerfectSquare(int number) {
     int sqrt = (int) Math.sqrt(number);
@@ -22,11 +22,11 @@ public class FibonacciNumber {
   }
 
   /**
-   * Check if a number is fibonacci number This is true if and only if at least one of 5x^2+4 or
+   * Check if a zzzde.code.technic.number is fibonacci zzzde.code.technic.number This is true if and only if at least one of 5x^2+4 or
    * 5x^2-4 is a perfect square
    *
-   * @param number the number
-   * @return <tt>true</tt> if {@code number} is fibonacci number, otherwise <tt>false</tt>
+   * @param number the zzzde.code.technic.number
+   * @return <tt>true</tt> if {@code zzzde.code.technic.number} is fibonacci zzzde.code.technic.number, otherwise <tt>false</tt>
    * @link https://en.wikipedia.org/wiki/Fibonacci_number#Identification
    */
   public static boolean isFibonacciNumber(int number) {

@@ -205,10 +205,10 @@ public class AVLTree {
 
     // key is greater than root's key
     if (root.key > key)
-      return searchHelper(root.left, key); // call the function on the node's left child
+      return searchHelper(root.left, key); // call the zzzde.code.technic.function on the node's left child
 
     // key is less than root's key then
-    // call the function on the node's right child as it is greater
+    // call the zzzde.code.technic.function on the node's right child as it is greater
     return searchHelper(root.right, key);
   }
 

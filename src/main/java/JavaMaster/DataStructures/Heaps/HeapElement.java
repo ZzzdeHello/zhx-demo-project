@@ -17,7 +17,7 @@ public class HeapElement {
   // Constructors
 
   /**
-   * @param key : a number of primitive type 'double'
+   * @param key : a zzzde.code.technic.number of primitive type 'double'
    * @param info : any kind of IMMUTABLE object. May be null, since the purpose is only to carry
    *     additional information of use for the user
    */
@@ -27,7 +27,7 @@ public class HeapElement {
   }
 
   /**
-   * @param key : a number of primitive type 'int'
+   * @param key : a zzzde.code.technic.number of primitive type 'int'
    * @param info : any kind of IMMUTABLE object. May be null, since the purpose is only to carry
    *     additional information of use for the user
    */
@@ -37,7 +37,7 @@ public class HeapElement {
   }
 
   /**
-   * @param key : a number of object type 'Integer'
+   * @param key : a zzzde.code.technic.number of object type 'Integer'
    * @param info : any kind of IMMUTABLE object. May be null, since the purpose is only to carry
    *     additional information of use for the user
    */
@@ -47,7 +47,7 @@ public class HeapElement {
   }
 
   /**
-   * @param key : a number of object type 'Double'
+   * @param key : a zzzde.code.technic.number of object type 'Double'
    * @param info : any kind of IMMUTABLE object. May be null, since the purpose is only to carry
    *     additional information of use for the user
    */
@@ -56,25 +56,25 @@ public class HeapElement {
     this.additionalInfo = info;
   }
 
-  /** @param key : a number of primitive type 'double' */
+  /** @param key : a zzzde.code.technic.number of primitive type 'double' */
   public HeapElement(double key) {
     this.key = key;
     this.additionalInfo = null;
   }
 
-  /** @param key : a number of primitive type 'int' */
+  /** @param key : a zzzde.code.technic.number of primitive type 'int' */
   public HeapElement(int key) {
     this.key = key;
     this.additionalInfo = null;
   }
 
-  /** @param key : a number of object type 'Integer' */
+  /** @param key : a zzzde.code.technic.number of object type 'Integer' */
   public HeapElement(Integer key) {
     this.key = key;
     this.additionalInfo = null;
   }
 
-  /** @param key : a number of object type 'Double' */
+  /** @param key : a zzzde.code.technic.number of object type 'Double' */
   public HeapElement(Double key) {
     this.key = key;
     this.additionalInfo = null;

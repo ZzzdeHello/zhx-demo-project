@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 public class Merge_K_SortedLinkedlist {
 
   /**
-   * This function merge K sorted LinkedList
+   * This zzzde.code.technic.function merge K sorted LinkedList
    *
    * @param a array of LinkedList
    * @param N size of array

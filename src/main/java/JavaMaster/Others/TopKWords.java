@@ -3,8 +3,8 @@ package JavaMaster.Others;
 import java.io.*;
 import java.util.*;
 
-/* display the most frequent K words in the file and the times it appear
-in the file – shown in order (ignore case and periods) */
+/* display the most frequent K words in the zzzde.project.technic.file and the times it appear
+in the zzzde.project.technic.file – shown in order (ignore case and periods) */
 
 public class TopKWords {
   static class CountWords {
@@ -20,7 +20,7 @@ public class TopKWords {
 
       try {
 
-        fis = new FileInputStream(fileName); // open the file
+        fis = new FileInputStream(fileName); // open the zzzde.project.technic.file
         int in = 0;
         String s = ""; // init a empty word
         in = fis.read(); // read one character
@@ -68,13 +68,13 @@ public class TopKWords {
     // we change the map to list for convenient sort
     List<Map.Entry<String, Integer>> list = new ArrayList<>(dictionary.entrySet());
 
-    // sort by lambda valueComparator
+    // sort by zzzde.code.technic.lambda valueComparator
     list.sort(Comparator.comparing(m -> m.getValue()));
 
     Scanner input = new Scanner(System.in);
     int k = input.nextInt();
     while (k > list.size()) {
-      System.out.println("Retype a number, your number is too large");
+      System.out.println("Retype a zzzde.code.technic.number, your zzzde.code.technic.number is too large");
       input = new Scanner(System.in);
       k = input.nextInt();
     }

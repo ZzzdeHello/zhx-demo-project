@@ -22,9 +22,9 @@ public class RomanToInteger {
   // Roman Number = Roman Numerals
 
   /**
-   * This function convert Roman number into Integer
+   * This zzzde.code.technic.function convert Roman zzzde.code.technic.number into Integer
    *
-   * @param A Roman number string
+   * @param A Roman zzzde.code.technic.number string
    * @return integer
    */
   public static int romanToInt(String A) {
@@ -45,11 +45,11 @@ public class RomanToInteger {
 
       int currentNum = map.get(c);
 
-      // if current number greater then prev max previous then add
+      // if current zzzde.code.technic.number greater then prev max previous then add
       if (currentNum >= newPrev) {
         sum += currentNum;
       } else {
-        // subtract upcoming number until upcoming number not greater then prev max
+        // subtract upcoming zzzde.code.technic.number until upcoming zzzde.code.technic.number not greater then prev max
         sum -= currentNum;
       }
 

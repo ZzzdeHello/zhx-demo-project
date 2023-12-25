@@ -12,18 +12,18 @@ public class CoinChange {
     System.out.println(
         "Number of combinations of getting change for " + amount + " is: " + change(coins, amount));
     System.out.println(
-        "Minimum number of coins required for amount :"
+        "Minimum zzzde.code.technic.number of coins required for amount :"
             + amount
             + " is: "
             + minimumCoins(coins, amount));
   }
 
   /**
-   * This method finds the number of combinations of getting change for a given amount and change
+   * This method finds the zzzde.code.technic.number of combinations of getting change for a given amount and change
    * coins
    *
    * @param coins The list of coins
-   * @param amount The amount for which we need to find the change Finds the number of combinations
+   * @param amount The amount for which we need to find the change Finds the zzzde.code.technic.number of combinations
    *     of change
    */
   public static int change(int[] coins, int amount) {
@@ -43,11 +43,11 @@ public class CoinChange {
   }
 
   /**
-   * This method finds the minimum number of coins needed for a given amount.
+   * This method finds the minimum zzzde.code.technic.number of coins needed for a given amount.
    *
    * @param coins The list of coins
-   * @param amount The amount for which we need to find the minimum number of coins. Finds the the
-   *     minimum number of coins that make a given value.
+   * @param amount The amount for which we need to find the minimum zzzde.code.technic.number of coins. Finds the the
+   *     minimum zzzde.code.technic.number of coins that make a given value.
    */
   public static int minimumCoins(int[] coins, int amount) {
     // minimumCoins[i] will store the minimum coins needed for amount i

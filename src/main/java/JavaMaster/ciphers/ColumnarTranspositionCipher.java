@@ -102,10 +102,10 @@ public class ColumnarTranspositionCipher {
   }
 
   /**
-   * Determines the number of rows the table should have regarding the Columnar Transposition Cipher
+   * Determines the zzzde.code.technic.number of rows the table should have regarding the Columnar Transposition Cipher
    * Rule
    *
-   * @return an int with the number of rows that the table should have in order to respect the
+   * @return an int with the zzzde.code.technic.number of rows that the table should have in order to respect the
    *     Columnar Transposition Cipher Rule.
    */
   private static int numberOfRows(String word) {

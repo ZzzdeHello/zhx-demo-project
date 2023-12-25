@@ -62,7 +62,7 @@ public final class ClosestPair {
   }
 
   /**
-   * xPartition function: arrange x-axis.
+   * xPartition zzzde.code.technic.function: arrange x-axis.
    *
    * @param a (IN Parameter) array of points <br>
    * @param first (IN Parameter) first point <br>
@@ -90,7 +90,7 @@ public final class ClosestPair {
   }
 
   /**
-   * yPartition function: arrange y-axis.
+   * yPartition zzzde.code.technic.function: arrange y-axis.
    *
    * @param a (IN Parameter) array of points <br>
    * @param first (IN Parameter) first point <br>
@@ -118,7 +118,7 @@ public final class ClosestPair {
   }
 
   /**
-   * xQuickSort function: //x-axis Quick Sorting.
+   * xQuickSort zzzde.code.technic.function: //x-axis Quick Sorting.
    *
    * @param a (IN Parameter) array of points <br>
    * @param first (IN Parameter) first point <br>
@@ -134,7 +134,7 @@ public final class ClosestPair {
   }
 
   /**
-   * yQuickSort function: //y-axis Quick Sorting.
+   * yQuickSort zzzde.code.technic.function: //y-axis Quick Sorting.
    *
    * @param a (IN Parameter) array of points <br>
    * @param first (IN Parameter) first point <br>
@@ -150,10 +150,10 @@ public final class ClosestPair {
   }
 
   /**
-   * closestPair function: find closest pair.
+   * closestPair zzzde.code.technic.function: find closest pair.
    *
    * @param a (IN Parameter) array stored before divide <br>
-   * @param indexNum (IN Parameter) number coordinates divideArray <br>
+   * @param indexNum (IN Parameter) zzzde.code.technic.number coordinates divideArray <br>
    * @return minimum distance <br>
    */
   public double closestPair(final Location[] a, final int indexNum) {
@@ -164,7 +164,7 @@ public final class ClosestPair {
     Location[] leftArray = new Location[divideX]; // divide - left array
     // divide-right array
     Location[] rightArray = new Location[indexNum - divideX];
-    if (indexNum <= 3) { // If the number of coordinates is 3 or less
+    if (indexNum <= 3) { // If the zzzde.code.technic.number of coordinates is 3 or less
       return bruteForce(divideArray);
     }
     // divide-left array
@@ -238,7 +238,7 @@ public final class ClosestPair {
   }
 
   /**
-   * bruteForce function: When the number of coordinates is less than 3.
+   * bruteForce zzzde.code.technic.function: When the zzzde.code.technic.number of coordinates is less than 3.
    *
    * @param arrayParam (IN Parameter) array stored before divide <br>
    * @return <br>
@@ -294,10 +294,10 @@ public final class ClosestPair {
   }
 
   /**
-   * main function: execute class.
+   * main zzzde.code.technic.function: execute class.
    *
    * @param args (IN Parameter) <br>
-   * @throws IOException If an input or output exception occurred
+   * @throws IOException If an input or output zzzde.project.technic.trycatch.exception occurred
    */
   public static void main(final String[] args) {
 

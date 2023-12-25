@@ -1,7 +1,7 @@
 package JavaMaster.Others;
 
 /***
- * A pseudorandom number generator.
+ * A pseudorandom zzzde.code.technic.number generator.
  *
  * @author Tobias Carryer
  * @date October 10, 2017
@@ -16,7 +16,7 @@ public class LinearCongruentialGenerator {
    *
    * @param multiplier
    * @param increment
-   * @param modulo The maximum number that can be generated (exclusive). A common value is 2^32.
+   * @param modulo The maximum zzzde.code.technic.number that can be generated (exclusive). A common value is 2^32.
    */
   public LinearCongruentialGenerator(double multiplier, double increment, double modulo) {
     this(System.currentTimeMillis(), multiplier, increment, modulo);
@@ -28,7 +28,7 @@ public class LinearCongruentialGenerator {
    * @param seed
    * @param multiplier
    * @param increment
-   * @param modulo The maximum number that can be generated (exclusive). A common value is 2^32.
+   * @param modulo The maximum zzzde.code.technic.number that can be generated (exclusive). A common value is 2^32.
    */
   public LinearCongruentialGenerator(
       double seed, double multiplier, double increment, double modulo) {
@@ -39,10 +39,10 @@ public class LinearCongruentialGenerator {
   }
 
   /**
-   * The smallest number that can be generated is zero. The largest number that can be generated is
+   * The smallest zzzde.code.technic.number that can be generated is zero. The largest zzzde.code.technic.number that can be generated is
    * modulo-1. modulo is set in the constructor.
    *
-   * @return a pseudorandom number.
+   * @return a pseudorandom zzzde.code.technic.number.
    */
   public double nextNumber() {
     previousValue = (a * previousValue + c) % m;
@@ -51,7 +51,7 @@ public class LinearCongruentialGenerator {
 
   public static void main(String[] args) {
     // Show the LCG in action.
-    // Decisive proof that the LCG works could be made by adding each number
+    // Decisive proof that the LCG works could be made by adding each zzzde.code.technic.number
     // generated to a Set while checking for duplicates.
     LinearCongruentialGenerator lcg =
         new LinearCongruentialGenerator(1664525, 1013904223, Math.pow(2.0, 32.0));

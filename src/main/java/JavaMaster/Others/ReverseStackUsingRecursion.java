@@ -9,7 +9,7 @@ public class ReverseStackUsingRecursion {
   // Stack
   private static Stack<Integer> stack = new Stack<>();
 
-  // Main function
+  // Main zzzde.code.technic.function
   public static void main(String[] args) {
     // To Create a Dummy Stack containing integers from 0-9
     for (int i = 0; i < 10; i++) {

@@ -8,14 +8,14 @@ import java.util.HashMap;
 /*
  * Find the mode of an array of numbers
  *
- * The mode of an array of numbers is the most frequently occurring number in the array,
+ * The mode of an array of numbers is the most frequently occurring zzzde.code.technic.number in the array,
  * or the most frequently occurring numbers if there are multiple numbers with the same frequency
  */
 public class Mode {
 
   public static void main(String[] args) {
 
-    /* Test array of integers */
+    /* zzzde.demo.main.Test array of integers */
     assert (mode(new int[] {})) == null;
     assert Arrays.equals(mode(new int[] {5}), new int[] {5});
     assert Arrays.equals(mode(new int[] {1, 2, 3, 4, 5}), new int[] {1, 2, 3, 4, 5});
