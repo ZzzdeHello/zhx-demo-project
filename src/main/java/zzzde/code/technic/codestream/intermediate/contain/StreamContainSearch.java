@@ -34,5 +34,7 @@ public class StreamContainSearch {
          if (0  == Convert.toInt("1",0)){
              System.out.println("--------------------进入");
          }
+
     }
+
 }
