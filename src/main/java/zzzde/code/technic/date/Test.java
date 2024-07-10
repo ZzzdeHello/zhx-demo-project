@@ -1,27 +1,36 @@
 package zzzde.code.technic.date;
 
-import java.text.DateFormat;
+import cn.hutool.core.date.DateField;
+import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.date.LocalDateTimeUtil;
+
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDate;
 import java.util.Date;
+
 
 public class Test {
 
     public static void main(String[] args) {
-        String dispatchTime = "2020-10-10 22:00:00:222";
+
         try {
-            Date dispatchTimeDate = DateUtil02.getDateFromPattern(dispatchTime, "yyyy-MM-dd HH:mm:ss");
-            System.out.println(dispatchTimeDate);
+            String startTimeStr = "2024-05-09 22:00:00:222";
+            String endTimeStr = "2024-06-19 22:00:00:222";
+            Date startTime = DateUtil02.getDateFromPattern(startTimeStr, "yyyy-MM-dd HH:mm:ss");
+            Date endTime = DateUtil02.getDateFromPattern(endTimeStr, "yyyy-MM-dd HH:mm:ss");
+
+            DateUtil.rangeConsume(startTime, endTime, DateField.DAY_OF_YEAR, datetime -> {
+                Instant instant = datetime.toInstant();
+
+                LocalDate localDate = LocalDateTimeUtil.ofDate(datetime.toInstant()); // 某天
+                System.out.println("month : " + localDate.getDayOfMonth());
+                System.out.println("week : " + localDate.getDayOfWeek().getValue());
+            });
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        long time = 1604413349636l;
-        Date nwww = new Date(time);
-        System.out.println(nwww);
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yy:HH:mm:ss");
-        String format = dateFormat.format(nwww);
-        System.out.println(format);
     }
 
 }

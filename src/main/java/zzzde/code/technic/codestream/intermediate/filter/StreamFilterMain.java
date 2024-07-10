@@ -51,6 +51,15 @@ public class StreamFilterMain {
         System.out.println(w);
         System.out.println("-00000");
         System.out.println(JSON.toJSON(list));
+
+
+        List<String> w2 = list.stream()
+                .filter(name -> name.startsWith("吴"))
+                .filter(name -> name.length() == 3).collect(toList());
+
+        System.out.println(w2);
+        System.out.println("-11111");
+        System.out.println(JSON.toJSON(list));
     }
 
 

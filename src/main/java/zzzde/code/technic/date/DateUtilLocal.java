@@ -7,14 +7,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class DateUtil {
+public class DateUtilLocal {
     // 用来全局控制 上一周，本周，下一周的周数变化
     private int weeks = 0;
     private int MaxDate;// 一月最大天数
     private int MaxYear;// 一年最大天数
 
     public static void main(String[] args) {
-        DateUtil td = new DateUtil();
+        DateUtilLocal td = new DateUtilLocal();
         // TODO 自动生成的方法存根
         System.out.println("得到6个月后的日期:" + td.getAfterMonth(6));
         System.out.println("获取当天日期:" + td.getNowTime("yyyy-MM-dd"));
@@ -39,7 +39,7 @@ public class DateUtil {
         System.out.println("获取明年最后一天日期:" + td.getNextYearEnd());
         System.out.println("获取本季度第一天到最后一天:" + td.getThisSeasonTime(11));
         System.out.println("获取两个日期之间间隔天数2008-10-26~2016-10-26: "
-                + DateUtil.getTwoDay("2008-10-26", "2016-10-26"));
+                + DateUtilLocal.getTwoDay("2008-10-26", "2016-10-26"));
         td.getWeekTime();
         System.out.println("2016年3月有 "+td.getSetDayMaxDays_A_Month(2016, 3)+"天");
         //td.getMonthDays();
@@ -154,7 +154,7 @@ public class DateUtil {
      */
     public static String getWeek(String sdate) {
         // 再转换为时间
-        Date date = DateUtil.strToDate(sdate);
+        Date date = DateUtilLocal.strToDate(sdate);
         Calendar c = Calendar.getInstance();
         c.setTime(date);
         // int hour=c.get(Calendar.DAY_OF_WEEK);
