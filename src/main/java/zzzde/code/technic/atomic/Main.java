@@ -27,21 +27,4 @@ public class Main {
         }
         System.out.println(atomicInteger);
     }
-
-
-    public static void main(String[] args) {
-        ManualCallWorkOrder order = new ManualCallWorkOrder();order.setCustomerMobile("19124297237");order.setId(1L);
-        ManualCallWorkOrder order1 = new ManualCallWorkOrder();order1.setCustomerMobile("15968867017");order1.setId(2L);
-        ManualCallWorkOrder order2 = new ManualCallWorkOrder();order2.setCustomerMobile("15968867017");order2.setId(3L);
-        List<ManualCallWorkOrder> manualCallWorkOrders = new ArrayList();
-        manualCallWorkOrders.add(order);
-        manualCallWorkOrders.add(order1);
-        manualCallWorkOrders.add(order2);
-        // 根据手机号码去重
-        List<ManualCallWorkOrder> uniqueMobileOrderList = manualCallWorkOrders.stream().collect(
-                Collectors.collectingAndThen(
-                        Collectors.toCollection(() -> new TreeSet<>(Comparator.comparing(ManualCallWorkOrder::getCustomerMobile))), ArrayList::new)
-        );
-        System.out.println(JSON.toJSONString(uniqueMobileOrderList));
-    }
 }
